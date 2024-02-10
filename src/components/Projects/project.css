@@ -4,6 +4,10 @@
     align-items: center;
 }
 
+.content{
+    overflow: hidden;
+}
+
 .project .background {
     position: relative;
     display: flex;
@@ -39,11 +43,11 @@
     font-family: 'Poiret One', cursive;
     font-weight: bold;
     font-size: 1.5rem;
-    height: 7rem;
+    height: 4rem;
     width: 7rem;
     color: #2e2e2e;
     background: white;
-    border-radius: 50%;
+    border-radius: 10px;
     z-index: 12;
 }
 

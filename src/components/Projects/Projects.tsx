@@ -156,7 +156,6 @@ export const Projects: React.FC = () => {
                         title_des={item.title_des}
                         description={item.description}
                         img_des={item.img_des}
-                        youtube={item.youtube}
                         github={item.github}
                     />
                 ))}

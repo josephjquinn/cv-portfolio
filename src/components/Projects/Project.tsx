@@ -1,4 +1,4 @@
-import { useState } from "react";
+import {useEffect, useState} from "react";
 import { BsYoutube, BsGithub } from "react-icons/bs";
 import { easeInOut, motion as m } from "framer-motion";
 import "./project.css";
@@ -21,9 +21,21 @@ export default function Project({
                                     description,
                                     youtube,
                                     github,
+
                                 }: ProjectProps) {
     const [isClick, setIsClick] = useState<boolean>(false);
     const [isHover, setIsHover] = useState<boolean>(false);
+
+    useEffect(() => {
+        if (isClick) {
+            document.body.style.overflow = "hidden";
+        } else {
+            document.body.style.overflow = "auto";
+        }
+        return () => {
+            document.body.style.overflow = "auto";
+        };
+    }, [isClick]);
 
     return (
         <div className="project">
@@ -33,6 +45,7 @@ export default function Project({
                 onMouseEnter={() => setIsHover(true)}
                 onMouseLeave={() => setIsHover(false)}
             >
+
                 <img src={img} alt={title} />
                 {isHover && (
                     <>
@@ -49,9 +62,7 @@ export default function Project({
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: 0.2, duration: 0.6, ease: easeInOut }}
                         >
-                            Click
-                            <br />
-                            me
+                            Click me
                         </m.p>
                     </>
                 )}
@@ -110,5 +121,5 @@ export default function Project({
                 </div>
             )}
         </div>
-    );
+);
 }
