@@ -1,0 +1,207 @@
+.home {
+    position: relative;
+    width: 100vw;
+    height: 200vh;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+    background: #e0e0e0;
+}
+
+.home .section1 {
+    height: 100vh;
+    background: white;
+}
+
+.home .section1 h1 {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 1rem;
+    font-family: 'Poiret One', cursive;
+    white-space: nowrap;
+    color: #2e2e2e;
+    z-index: 1000;
+}
+
+.home .section1 img {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) rotate(0deg);
+    font-family: 'Montserrat', sans-serif;
+    padding: 1rem;
+    color: #2e2e2e;
+    z-index: 1000;
+}
+
+.home .section2 img {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.home .section2 .text-at-bottom {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 600;
+    color: #ffffff;
+    z-index: 10;
+}
+
+.home .section2 .text-at-bottom p {
+    letter-spacing: .2rem;
+}
+
+.home .section2 .text-at-bottom .icon {
+    animation: bouncing .6s ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes bouncing {
+    from {
+        transform: translateY(10px);
+    }
+    to {
+        transform: translateY(-10px);
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .home .section1 h1 {
+        font-size: .8rem;
+        letter-spacing: .2rem;
+    }
+
+    .home .section1 img {
+        height: 15rem;
+    }
+
+    .home .section2 img {
+        height: 30%;
+    }
+
+    .home .section2 .text-at-bottom {
+        bottom: 4rem;
+    }
+
+    .home .section2 .text-at-bottom p {
+        font-size: .8rem;
+    }
+
+    .home .section2 .text-at-bottom span {
+        font-size: .5rem;
+        letter-spacing: .1rem;
+    }
+}
+
+@media screen and (min-width: 351px) and (max-width: 599px) {
+    .home .section1 h1 {
+        font-size: .8rem;
+        letter-spacing: .2rem;
+    }
+
+    .home .section1 img {
+        height: 25rem;
+    }
+
+    .home .section2 img {
+        height: 30%;
+    }
+
+    .home .section2 .text-at-bottom {
+        bottom: 4rem;
+    }
+
+    .home .section2 .text-at-bottom p {
+        font-size: 1rem;
+    }
+
+    .home .section2 .text-at-bottom span {
+        font-size: .6rem;
+        letter-spacing: .1rem;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+    .home .section1 h1 {
+        font-size: 1.2rem;
+        letter-spacing: .6rem;
+    }
+
+    .home .section1 img {
+        height: 30rem;
+    }
+
+    .home .section2 img {
+        height: 45%;
+    }
+
+    .home .section2 .text-at-bottom {
+        bottom: 6rem;
+    }
+
+    .home .section2 .text-at-bottom p {
+        font-size: 1.6rem;
+    }
+
+    .home .section2 .text-at-bottom span {
+        font-size: .8rem;
+        letter-spacing: .3rem;
+    }
+}
+
+@media screen and (min-width: 1023px) and (max-width: 1919px) {
+    .home .section1 h1 {
+        font-size: 1.8rem;
+        letter-spacing: .8rem;
+    }
+
+    .home .section1 img {
+        height: 40rem;
+    }
+
+    .home .section2 img {
+        height: 45%;
+    }
+
+    .home .section2 .text-at-bottom {
+        bottom: 6rem;
+    }
+
+    .home .section2 .text-at-bottom p {
+        font-size: 2rem;
+    }
+
+    .home .section2 .text-at-bottom span {
+        font-size: .8rem;
+        letter-spacing: .3rem;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .home .section1 h1 {
+        font-size: 2rem;
+        letter-spacing: 1rem;
+    }
+
+    .home .section1 img {
+        height: 40rem;
+    }
+
+    .home .section2 img {
+        height: 50%;
+    }
+
+    .home .section2 .text-at-bottom {
+        bottom: 6rem;
+    }
+
+    .home .section2 .text-at-bottom p {
+        font-size: 2rem;
+    }
+}
