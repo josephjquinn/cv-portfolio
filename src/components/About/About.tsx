@@ -1,6 +1,6 @@
 import React, {useRef, useEffect} from "react"
 import "./about.css"
-import Profile2 from "../../assets/profile22.png"
+import Headshot from "../../assets/headshot1.png"
 import gsap from "gsap";
 import {ScrollTrigger} from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
@@ -39,27 +39,28 @@ export const About: React.FC = () => {
     return(
         <div className="about">
             <div className="content">
-                <img src={Profile2} ref={imgRef}></img>
+                <img src={Headshot} ref={imgRef} alt={"headshot"}></img>
                 <p className="paragraph" ref={paraRef}>
-                    Hello everyone, my name is Kiet, who is passionate about coding and UI design. Let's talk about my background. I'm a self-taught developer who started learning front-end skills and coding for several projects in a year.
+                    Hello everyone, my name is Joseph, I'm a computer science student with a foundation in programming and problem-solving,
+                    excited about software development, AI, and tackling real-world Issues. Currently, I'm seeking opportunities to collaborate
+                    on exciting tech projects and contribute to industry growth.
                     <br/>
                     <br/>
-                    During that time, I published a lot of projects on my Youtube channel. And got a lot of good feedback from my audience. That motivated me a lot. I found my passion through each project and want to create even more amazing ones. That keeps me always learning to improve my skills.
+                    I'm deeply passionate about films, with Blade Runner (1982) and La La Land being my top choices.
+                    In terms of music, Lush by Mitski and Diamond Eyes by Deftones as my favorite albums.
                     <br/>
                     <br/>
                     You can see more about my projects and skills below.
                     <br/>
                     <br/>
                 </p>
-                <div className="info" ref={infoRef}>
-                    <p className="name">THE KIET VUONG</p>
-                    <p>0123 456 789</p>
-                    <p>vvvvvvvvv@gmail.com</p>
-                    <p>Ho Chi Minh City, Viet Nam</p>
-                </div>
+                {/*<div className="info" ref={infoRef}>*/}
+                {/*    <p className="name">THE KIET VUONG</p>*/}
+                {/*    <p>0123 456 789</p>*/}
+                {/*    <p>vvvvvvvvv@gmail.com</p>*/}
+                {/*    <p>Ho Chi Minh City, Viet Nam</p>*/}
+                {/*</div>*/}
             </div>
         </div>
     );
 }
-
-export default About;
