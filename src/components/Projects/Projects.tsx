@@ -2,12 +2,15 @@ import React, { useEffect, useRef } from "react";
 import "./projects.css";
 import Project from "./Project";
 
-import Project1 from "../../assets/Project 1.png";
-import Project2 from "../../assets/Project 2.png";
-import Project3 from "../../assets/Project 3.png";
-import ImgDes1 from "../../assets/imgDes1.png";
-import ImgDes2 from "../../assets/imgDes2.png";
-import ImgDes3 from "../../assets/imgDes3.png";
+import wordwise from "../../assets/projects/wordwise.png";
+import wordwise_des from "../../assets/projects/wordwise-info.png";
+import huffman from "../../assets/projects/huffman.png";
+import huffman_des from "../../assets/projects/huffman-info.png";
+import snakedql from "../../assets/projects/sdl.png";
+import snakedql_des from "../../assets/projects/sdl-info.png";
+
+
+
 import logo from "../../assets/logo.png";
 
 import gsap from "gsap";
@@ -27,9 +30,9 @@ interface ProjectData {
 
 const projectArr: ProjectData[] = [
     {
-        img: Project1,
-        title: "Kat game",
-        img_des: ImgDes1,
+        img: wordwise,
+        title: "Wordwise",
+        img_des: wordwise_des,
         subtitle: "Control character in 2D game.",
         description: (
             <p>In this project, I use my advantage skill to design my own character. It’s inspired by the game Hollow Knight. Then I create a sprite sheet with run, attack, jump, and dash actions. Finally, make animation by using Javascript.
@@ -44,9 +47,9 @@ const projectArr: ProjectData[] = [
         github: "https://github.com/thekietvuong/Sprite-Animation-in-JavaScript"
     },
     {
-        img: Project2,
-        title: "Fox website",
-        img_des: ImgDes2,
+        img: snakedql,
+        title: "Snake Deep Learning",
+        img_des: snakedql_des,
         subtitle: "The RedFox website",
         description: (
             <p>This project is a website about red foxes that includes interesting information about their characteristics, habitat, food, and reproduction,...
@@ -61,9 +64,9 @@ const projectArr: ProjectData[] = [
         github: "https://github.com/thekietvuong/The-Red-Fox-Information-Website"
     },
     {
-        img: Project3,
-        title: "Pokemon API",
-        img_des: ImgDes3,
+        img: huffman,
+        title: "Huffman Encoding",
+        img_des: huffman_des,
         subtitle: "POKEMON API",
         description: (
             <p>This project is a front-end developer test of the MOCK interview. Fetching Pokemon API with React as a framework. Once again, I took advantage of my graphic design to create a simple yet interesting UI.
@@ -113,9 +116,8 @@ export const Projects: React.FC = () => {
                     <h1 ref={textH1Ref}>MY PROJECT</h1>
                     <p ref={infoRef}>
                         <span>Hi,</span><br/>
-                        Welcome to The Kiet's project.<br/>
-                        Almost my projects tend to be simple, with minimal design & typography.
-                        You can click on my project for more details
+                        My projects range from webdev to machine learning.
+                        You can click any project for more details
                     </p>
                 </div>
             </div>
