@@ -253,59 +253,27 @@
         font-size: .9rem;
         padding: 0 1.2rem;
     }
-
-    .contact .right {
-        width: 100%;
-    }
-
-    .contact .right form {
-        left: 50%;
-        transform: translateX(-50%) translateY(-50%);
-    }
-
-    .contact .right form input,
-    .contact .right form textarea {
-        width: 60%;
-    }
-
-    .contact .right form .submit-successful {
-        justify-content: center;
-    }
 }
 
 /* Desktop */
 @media screen and (min-width: 1900px) {
     .contact {
-        flex-direction: row;
+        flex-direction: column;
         height: 100vh;
     }
 
     .contact .left {
-        width: 50%;
+        width: 100%;
     }
 
     .contact .left .text-box {
         width: 40rem;
-        right: 3rem;
-        transform: translateY(-50%);
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
     }
 
     .contact .left .text-box p {
         font-size: .9rem;
         padding: 0 1.2rem;
-    }
-
-    .contact .right {
-        width: 50%;
-    }
-
-    .contact .right form {
-        transform: translateY(-50%);
-        padding-left: 5rem;
-    }
-
-    .contact .right form input,
-    .contact .right form textarea {
-        width: 60%;
     }
 }
