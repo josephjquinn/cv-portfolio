@@ -1,74 +1,89 @@
 import React, {useEffect, useRef} from "react"
 import "./skills.css"
 
-import {SiAdobeillustrator, SiAdobephotoshop} from "react-icons/si"
-import {BsBrushFill} from "react-icons/bs"
-import {DiHtml5, DiCss3, DiJavascript, DiReact} from "react-icons/di"
-import {GiPuzzle} from "react-icons/gi"
+import { SiAdobeillustrator, SiAdobephotoshop } from "react-icons/si";
+import { BsBrushFill } from "react-icons/bs";
+import { DiHtml5, DiCss3, DiJavascript, DiReact } from "react-icons/di";
+import { GiPuzzle } from "react-icons/gi";
 import { TypeAnimation } from 'react-type-animation';
 
-
 import gsap from "gsap";
-import {ScrollTrigger} from "gsap/ScrollTrigger";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const technicallSkill = [
-    {
-        icon: <DiHtml5/>,
-        name: "HTML",
-        level: 4,
-    },
-    {
-        icon: <DiCss3/>,
-        name: "CSS / SCSS",
-        level: 3,
-    },
-    {
-        icon: <DiJavascript/>,
-        name: "Javascript",
-        level: 4,
-    },
-    {
-        icon: <DiReact/>,
-        name: "React",
-        level: 5,
-    },
-]
+interface Skill {
+    icon: JSX.Element;
+    name: string;
+    description?: string;
+}
 
-const softSkill = [
+const languages: Skill[] = [
     {
-        icon: <SiAdobeillustrator/>,
+        icon: <DiHtml5 />,
+        name: "HTML",
+    },
+    {
+        icon: <DiCss3 />,
+        name: "CSS",
+    },
+    {
+        icon: <DiJavascript />,
+        name: "Javascript",
+    },
+    {
+        icon: <DiReact />,
+        name: "React",
+    },
+];
+
+const libraries: Skill[] = [
+    {
+        icon: <SiAdobeillustrator />,
         name: "Adobe Illustrator",
-        level: 5,
     },
     {
-        icon: <SiAdobephotoshop/>,
+        icon: <SiAdobephotoshop />,
         name: "Photoshop",
-        level: 3,
     },
     {
-        icon: <BsBrushFill/>,
+        icon: <BsBrushFill />,
         name: "UI design",
-        level: 4,
     },
     {
-        icon: <GiPuzzle/>,
+        icon: <GiPuzzle />,
         name: "Critical thinking",
-        level: 5,
     },
-]
+];
+
+const tools: Skill[] = [
+    {
+        icon: <SiAdobeillustrator />,
+        name: "Adobe Illustrator",
+    },
+    {
+        icon: <SiAdobephotoshop />,
+        name: "Photoshop",
+    },
+    {
+        icon: <BsBrushFill />,
+        name: "UI design",
+    },
+    {
+        icon: <GiPuzzle />,
+        name: "Critical thinking",
+    },
+];
 
 export const Skills: React.FC = () => {
+    const h1Ref = useRef<HTMLHeadingElement>(null);
+    const skillIntroRef = useRef<HTMLDivElement>(null);
+    const skillBoxRef = useRef<HTMLDivElement>(null);
+    const lineArtRef = useRef<HTMLDivElement>(null);
 
-    const h1Ref = useRef(null);
-    const skillIntroRef = useRef(null);
-    const skillBoxRef = useRef(null);
-    const lineArtRef = useRef(null);
+    const refEle = [h1Ref, skillIntroRef, skillBoxRef, lineArtRef];
 
-    const refEle = [h1Ref, skillIntroRef, skillBoxRef, lineArtRef]
-
-    const gsapAnimation = (ref: any) => {
+    const gsapAnimation = (ref: React.RefObject<HTMLDivElement>) => {
         gsap.fromTo(ref.current,
             {
                 y: "10rem",
@@ -82,23 +97,23 @@ export const Skills: React.FC = () => {
                     scrub: 2,
                     markers: false,
                 }
-            })
-    }
+            });
+    };
 
     useEffect(() => {
-        refEle.map(item => {
-            gsapAnimation(item);
-        })
-
-    }, [])
-
+        refEle.forEach(item => {
+            if (item.current) {
+                gsapAnimation(item);
+            }
+        });
+    }, []);
 
     return (
         <div className="skill-page">
             <h1 ref={h1Ref}>MY SKILL</h1>
 
             <div className="skill-intro" ref={skillIntroRef}>
-                <p><span>"</span> Almost my skills, I learn by myself. <br/>Let me tell you what I can do</p>
+                <p><span>"</span> Almost my skills, I learn by myself. <br />Let me tell you what I can do</p>
 
                 <div className={"skills-dir"}>
 
@@ -126,23 +141,13 @@ export const Skills: React.FC = () => {
                             style={{ fontSize: '2em' }}
                             repeat={Infinity}
                         />
-
-
-
-
-
-
-
-
-
                     </div>
 
-                <div className="skill-box" ref={skillBoxRef}>
-                    <div className="left">
-                        <h2 style={{textAlign:"left"}}>TECHNICAL SKILL</h2>
-                        <div className="skill-dex">
-                            {
-                                technicallSkill.map((item, index) => (
+                    <div className="skill-box" ref={skillBoxRef}>
+                        <div className="left">
+                            <h2 style={{textAlign: "left"}}>LANGUAGES</h2>
+                            <div className="skill-dex">
+                                {languages.map((item, index) => (
                                     <div className="skill" key={index}>
                                         <div className="icon">{item.icon}</div>
                                         <div className="skill-info">
@@ -150,13 +155,12 @@ export const Skills: React.FC = () => {
                                         </div>
                                     </div>
                                 ))}
+                            </div>
                         </div>
-                    </div>
-                    <div className="right">
-                        <h2 style={{textAlign:"left"}}>SOFT SKILL</h2>
-                        <div className="skill-dex">
-                            {
-                                softSkill.map((item, index) => (
+                        <div className="middle">
+                            <h2 style={{textAlign: "left"}}>TOOLS</h2>
+                            <div className="skill-dex">
+                                {tools.map((item, index) => (
                                     <div className="skill" key={index}>
                                         <div className="icon">{item.icon}</div>
                                         <div className="skill-info">
@@ -164,13 +168,26 @@ export const Skills: React.FC = () => {
                                         </div>
                                     </div>
                                 ))}
+                            </div>
+                        </div>
+                        <div className="right">
+                            <h2 style={{textAlign: "left"}}>LIBRARIES</h2>
+                            <div className="skill-dex">
+                                {libraries.map((item, index) => (
+                                    <div className="skill" key={index}>
+                                        <div className="icon">{item.icon}</div>
+                                        <div className="skill-info">
+                                            <h3>{item.name}</h3>
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
                         </div>
                     </div>
                 </div>
-                </div>
-
             </div>
-
         </div>
     );
-}
+};
+
+export default Skills;
