@@ -63,6 +63,12 @@
     font-weight: 600;
 }
 
+.project .intro
+{
+    display: flex;
+    align-items: center;
+}
+
 .project .detail {
     position: fixed;
     width: 100vw;
