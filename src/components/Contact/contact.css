@@ -11,7 +11,7 @@
 
 .contact .left .text-box {
     position: absolute;
-    top: 50%;
+    top: 32%;
 }
 
 .contact .left .text-box .text-box-icon {
@@ -32,7 +32,7 @@
 }
 
 .contact .left .text-box p {
-    text-align: left;
+    text-align: center;
     font-family: 'Poiret One', cursive;
     font-size: .9rem;
     font-weight: 600;
@@ -155,7 +155,7 @@
 @media screen and (min-width: 376px) and (max-width: 600px) {
     .contact {
         flex-direction: column;
-        height: 180vh;
+        height: 100vh;
     }
 
     .contact .left {
@@ -195,7 +195,7 @@
 @media screen and (min-width: 601px) and (max-width: 1023px) {
     .contact {
         flex-direction: column;
-        height: 150vh;
+        height: 100vh;
     }
 
     .contact .left {
@@ -236,7 +236,7 @@
 @media screen and (min-width: 1023px) and (max-width: 1899px) {
     .contact {
         flex-direction: column;
-        height: 150vh;
+        height: 100vh;
     }
 
     .contact .left {
