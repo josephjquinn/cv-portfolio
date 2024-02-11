@@ -113,7 +113,7 @@ export const Projects: React.FC = () => {
             <div className="intro">
                 <img src={logo} className="logo" ref={imgRef} alt="Logo" />
                 <div className="text">
-                    <h1 ref={textH1Ref}>MY PROJECT</h1>
+                    <h1 ref={textH1Ref}>MY PROJECTS</h1>
                     <p ref={infoRef}>
                         <span>Hi,</span><br/>
                         My projects range from webdev to machine learning.
