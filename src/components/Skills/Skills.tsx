@@ -137,7 +137,7 @@ export const Skills: React.FC = () => {
 
     return (
         <div className="skill-page">
-            <h1 ref={h1Ref}>MY SKILL</h1>
+            <h1 ref={h1Ref}>MY SKILLS</h1>
 
             <div className="skill-intro" ref={skillIntroRef}>
                 <p><span>"</span> Almost my skills, I learn by myself. <br />Let me tell you what I can do</p>
@@ -149,23 +149,17 @@ export const Skills: React.FC = () => {
                             preRenderFirstString={true}
                             sequence={[
                                 500,
-                                'Frontend: HTML, CSS, JavaScript', // initially rendered starting point
+                                'Frontend: HTML, CSS, React',
                                 1000,
-                                'Frontend Frameworks: React, Vue.js, Angular',
+                                'Languages: Java, Python, Typescript',
                                 1000,
                                 'Backend: Node.js, Express.js',
                                 1000,
-                                'Databases: MongoDB, MySQL, PostgreSQL',
-                                1000,
-                                'Mobile: React Native, Flutter',
-                                1000,
-                                'Version Control: Git, GitHub',
-                                1000,
-                                'Deployment: Heroku, Netlify, Vercel',
+                                'Databases: MongoDB, MySQL, Firebase',
                                 500,
                             ]}
                             speed={50}
-                            style={{ fontSize: '2em' }}
+                            style={{ fontSize: '20px', fontFamily:"Courier New, Courier, monospace"}}
                             repeat={Infinity}
                         />
                     </div>
