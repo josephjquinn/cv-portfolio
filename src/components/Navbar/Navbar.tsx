@@ -19,10 +19,10 @@ export const Navbar: React.FC = () => {
                     <Link className="nav-item" to="about" onClick={()=>setIsShowNav(false)} spy={true} smooth={true} offset={0} duration={600}>ABOUT</Link>
                 </div>
                 <div className="nav-link">
-                    <Link className="nav-item" to="project-content" onClick={()=>setIsShowNav(false)} spy={true} smooth={true} offset={-50} duration={600}>PROJECT</Link>
+                    <Link className="nav-item" to="project-content" onClick={()=>setIsShowNav(false)} spy={true} smooth={true} offset={-50} duration={600}>PROJECTS</Link>
                 </div>
                 <div className="nav-link">
-                    <Link className="nav-item" to="skill-page" spy={true} onClick={()=>setIsShowNav(false)} smooth={true} offset={-50} duration={600}>SKILL</Link>
+                    <Link className="nav-item" to="skill-page" spy={true} onClick={()=>setIsShowNav(false)} smooth={true} offset={-50} duration={600}>SKILLS</Link>
                 </div>
                 <div className="nav-link">
                     <Link className="nav-item" to="contact" onClick={()=>setIsShowNav(false)} spy={true} smooth={true} offset={-50} duration={600}>CONTACT</Link>
