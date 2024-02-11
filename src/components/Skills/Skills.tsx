@@ -1,13 +1,16 @@
-import React, { useEffect, useRef } from "react"
+import React, {useEffect, useRef} from "react"
 import "./skills.css"
 
 import {SiAdobeillustrator, SiAdobephotoshop} from "react-icons/si"
 import {BsBrushFill} from "react-icons/bs"
 import {DiHtml5, DiCss3, DiJavascript, DiReact} from "react-icons/di"
 import {GiPuzzle} from "react-icons/gi"
+import { TypeAnimation } from 'react-type-animation';
+
 
 import gsap from "gsap";
 import {ScrollTrigger} from "gsap/ScrollTrigger";
+
 gsap.registerPlugin(ScrollTrigger);
 
 const technicallSkill = [
@@ -65,75 +68,109 @@ export const Skills: React.FC = () => {
 
     const refEle = [h1Ref, skillIntroRef, skillBoxRef, lineArtRef]
 
-    const gsapAnimation = (ref:any) => {
-        gsap.fromTo(ref.current, 
+    const gsapAnimation = (ref: any) => {
+        gsap.fromTo(ref.current,
             {
                 y: "10rem",
-            }, 
-            {y: "0rem", duration: 1, scrollTrigger:{
-                trigger: ref.current,
-                toggleActions: 'restart none restart none',
-                start: `-600px center`,
-                end: `top center`,
-                scrub: 2,
-                markers: false,
-            }})
+            },
+            {
+                y: "0rem", duration: 1, scrollTrigger: {
+                    trigger: ref.current,
+                    toggleActions: 'restart none restart none',
+                    start: `-600px center`,
+                    end: `top center`,
+                    scrub: 2,
+                    markers: false,
+                }
+            })
     }
 
-    useEffect(()=>{
+    useEffect(() => {
         refEle.map(item => {
             gsapAnimation(item);
         })
 
-    },[])
+    }, [])
 
-    return(
+
+    return (
         <div className="skill-page">
             <h1 ref={h1Ref}>MY SKILL</h1>
-            
+
             <div className="skill-intro" ref={skillIntroRef}>
                 <p><span>"</span> Almost my skills, I learn by myself. <br/>Let me tell you what I can do</p>
-                <div className="code-box">
-                    <pre>
-                        1   const myTechnicalSkill = [ HTML, CSS, Javascript, React];<br/>
-                        2   const mySoftSkill = [Adobe Illustrator,<br/>                        Adobe Photoshop, UI Design];<br/>
-                        3   console.log(mySkill: [...myTechnicalSkill, ...mySoftSkill]);
-                    </pre>
-                    <div className="typing"><span className="pointer">|</span></div>
+
+                <div className={"skills-dir"}>
+
+                    <div className="code-box">
+                        <TypeAnimation
+                            preRenderFirstString={true}
+                            sequence={[
+                                500,
+                                'Frontend: HTML, CSS, JavaScript', // initially rendered starting point
+                                1000,
+                                'Frontend Frameworks: React, Vue.js, Angular',
+                                1000,
+                                'Backend: Node.js, Express.js',
+                                1000,
+                                'Databases: MongoDB, MySQL, PostgreSQL',
+                                1000,
+                                'Mobile: React Native, Flutter',
+                                1000,
+                                'Version Control: Git, GitHub',
+                                1000,
+                                'Deployment: Heroku, Netlify, Vercel',
+                                500,
+                            ]}
+                            speed={50}
+                            style={{ fontSize: '2em' }}
+                            repeat={Infinity}
+                        />
+
+
+
+
+
+
+
+
+
+                    </div>
+
+                <div className="skill-box" ref={skillBoxRef}>
+                    <div className="left">
+                        <h2 style={{textAlign:"left"}}>TECHNICAL SKILL</h2>
+                        <div className="skill-dex">
+                            {
+                                technicallSkill.map((item, index) => (
+                                    <div className="skill" key={index}>
+                                        <div className="icon">{item.icon}</div>
+                                        <div className="skill-info">
+                                            <h3>{item.name}</h3>
+                                        </div>
+                                    </div>
+                                ))}
+                        </div>
+                    </div>
+                    <div className="right">
+                        <h2 style={{textAlign:"left"}}>SOFT SKILL</h2>
+                        <div className="skill-dex">
+                            {
+                                softSkill.map((item, index) => (
+                                    <div className="skill" key={index}>
+                                        <div className="icon">{item.icon}</div>
+                                        <div className="skill-info">
+                                            <h3>{item.name}</h3>
+                                        </div>
+                                    </div>
+                                ))}
+                        </div>
+                    </div>
                 </div>
+                </div>
+
             </div>
 
-            <div className="skill-box" ref={skillBoxRef}>
-                <div className="left">
-                    <h2>TECHNICAL SKILL</h2>
-                    <div className="skill-dex">
-                        {
-                            technicallSkill.map((item, index) => (
-                                <div className="skill" key={index}>
-                                    <div className="icon">{item.icon}</div>
-                                    <div className="skill-info">
-                                        <h3>{item.name}</h3>
-                                    </div>
-                                </div>
-                        ))}
-                    </div>
-                </div>
-                <div className="right">
-                    <h2>SOFT SKILL</h2>
-                    <div className="skill-dex">
-                        {
-                            softSkill.map((item, index) => (
-                                <div className="skill" key={index}>
-                                    <div className="icon">{item.icon}</div>
-                                    <div className="skill-info">
-                                        <h3>{item.name}</h3>
-                                    </div>
-                                </div>
-                        ))}
-                    </div>
-                </div>
-            </div>
-           
         </div>
     );
 }
