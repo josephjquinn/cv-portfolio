@@ -12,6 +12,7 @@
     font-weight: 600;
     font-family: 'Poiret One', cursive;
     color: black;
+    overflow:visible;
 }
 
 .about .content img {
