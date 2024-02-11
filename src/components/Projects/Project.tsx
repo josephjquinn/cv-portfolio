@@ -1,12 +1,12 @@
 import {useEffect, useState} from "react";
-import { BsYoutube, BsGithub } from "react-icons/bs";
-import { easeInOut, motion as m } from "framer-motion";
+import {BsGithub} from "react-icons/bs";
+import {easeInOut, motion as m} from "framer-motion";
 import "./project.css";
 
 interface ProjectProps {
     img: string;
     title: string;
-    title_des: string;
+    subtitle: string;
     img_des: string;
     description: JSX.Element;
     youtube?: { link: string; title: string }[];
@@ -16,10 +16,9 @@ interface ProjectProps {
 export default function Project({
                                     img,
                                     title,
-                                    title_des,
+                                    subtitle,
                                     img_des,
                                     description,
-                                    youtube,
                                     github,
 
                                 }: ProjectProps) {
@@ -46,21 +45,21 @@ export default function Project({
                 onMouseLeave={() => setIsHover(false)}
             >
 
-                <img src={img} alt={title} />
+                <img src={img} alt={title}/>
                 {isHover && (
                     <>
                         <m.div
                             className="click-me-mate"
-                            initial={{ opacity: 0, y: 200 }}
-                            animate={{ opacity: 0.3, y: 0 }}
-                            exit={{ opacity: 0, y: 200 }}
-                            transition={{ duration: 0.6, ease: easeInOut }}
+                            initial={{opacity: 0, y: 200}}
+                            animate={{opacity: 0.3, y: 0}}
+                            exit={{opacity: 0, y: 200}}
+                            transition={{duration: 0.6, ease: easeInOut}}
                         ></m.div>
                         <m.p
                             className="click-me"
-                            initial={{ opacity: 0, y: 200 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ delay: 0.2, duration: 0.6, ease: easeInOut }}
+                            initial={{opacity: 0, y: 200}}
+                            animate={{opacity: 1, y: 0}}
+                            transition={{delay: 0.2, duration: 0.6, ease: easeInOut}}
                         >
                             Click me
                         </m.p>
@@ -76,50 +75,54 @@ export default function Project({
                         <p className="title-detail">PROJECT DETAIL</p>
                         <m.img
                             src={img_des}
-                            initial={{ opacity: 0, y: 200 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            exit={{ opacity: 0, y: 200 }}
-                            transition={{ duration: 0.6, ease: easeInOut }}
+                            initial={{opacity: 0, y: 200}}
+                            animate={{opacity: 1, y: 0}}
+                            exit={{opacity: 0, y: 200}}
+                            transition={{duration: 0.6, ease: easeInOut}}
                         />
-                        <m.h2
-                            initial={{ opacity: 0, y: 200 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            exit={{ opacity: 0, y: 200 }}
-                            transition={{ delay: 0.2, duration: 0.6, ease: easeInOut }}
-                        >
-                            {title_des}
-                        </m.h2>
+                        <div className={"intro"}>
+                            <m.h2
+                                style={{marginRight: "10px"}} /* Add margin-right for spacing */
+                                initial={{opacity: 0, y: 200}}
+                                animate={{opacity: 1, y: 0}}
+                                exit={{opacity: 0, y: 200}}
+                                transition={{delay: 0.2, duration: 0.6, ease: easeInOut}}
+                            >
+                                {subtitle}
+                            </m.h2>
+                            <m.div
+                                initial={{opacity: 0, y: 200}}
+                                animate={{opacity: 1, y: 0}}
+                                exit={{opacity: 0, y: 200}}
+                                transition={{delay: 0.2, duration: 0.6, ease: easeInOut}}>
+
+
+                                {github && (
+                                    <a className="github-link" href={github}
+                                       style={{display: "flex", justifyContent: "center"}}>
+                                        <BsGithub className="github-icon" style={{marginTop: "21px", marginRight: "5px"}}/>
+                                        <div>
+                                            <p>
+                                                Github
+                                            </p>
+                                        </div>
+                                    </a>
+                                )}
+                            </m.div>
+
+                        </div>
                         <m.div
                             className="content"
-                            initial={{ opacity: 0, y: 200 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            exit={{ opacity: 0, y: 200 }}
-                            transition={{ delay: 0.4, duration: 0.6, ease: easeInOut }}
+                            initial={{opacity: 0, y: 200}}
+                            animate={{opacity: 1, y: 0}}
+                            exit={{opacity: 0, y: 200}}
+                            transition={{delay: 0.4, duration: 0.6, ease: easeInOut}}
                         >
                             {description}
-                            {youtube && (
-                                <p>To see more about my project. Let's check out my Youtube video:</p>
-                            )}
-                            {youtube &&
-                                youtube.map((item, index) => (
-                                    <a href={item.link} key={index} className="youtube-link">
-                                        <p>
-                                            <BsYoutube className="icon" /> {item.title}
-                                        </p>
-                                    </a>
-                                ))}
-                            {github && (
-                                <a className="github-link" href={github}>
-                                    <p>
-                                        <BsGithub className="github-icon" /> Check out the code on my
-                                        Github{" "}
-                                    </p>
-                                </a>
-                            )}
                         </m.div>
                     </div>
                 </div>
             )}
         </div>
-);
+    );
 }

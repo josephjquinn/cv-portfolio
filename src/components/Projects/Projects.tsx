@@ -18,8 +18,8 @@ gsap.registerPlugin(ScrollTrigger);
 interface ProjectData {
     img: string;
     title: string;
+    subtitle: string;
     img_des: string;
-    title_des: string;
     description: JSX.Element;
     youtube?: { link: string; title: string }[];
     github?: string;
@@ -30,7 +30,7 @@ const projectArr: ProjectData[] = [
         img: Project1,
         title: "Kat game",
         img_des: ImgDes1,
-        title_des: "Control character in 2D game.",
+        subtitle: "Control character in 2D game.",
         description: (
             <p>In this project, I use my advantage skill to design my own character. It’s inspired by the game Hollow Knight. Then I create a sprite sheet with run, attack, jump, and dash actions. Finally, make animation by using Javascript.
                 <br/><br/>
@@ -41,31 +41,13 @@ const projectArr: ProjectData[] = [
                 Note: All of these things, I learned from the Franks Laboratory.
             </p>
         ),
-        youtube: [
-            {
-                link: "https://www.youtube.com/watch?v=aGnUiF1DrjM",
-                title: "Simple 2D Character design | Adobe illustrator CC (Javascript Game Ep.1)",
-            },
-            {
-                link: "https://www.youtube.com/watch?v=6sHTVf0XG70",
-                title: "How to Animate and Make a Sprite Sheet for Your Character (Javascript Game Ep.2)",
-            },
-            {
-                link: "https://www.youtube.com/watch?v=krNollwfqN0&t=1s",
-                title: "Sprite Animation in JavaScript - JavaScript Tutorial with HTML Canvas (Javascript Game Ep.3)",
-            },
-            {
-                link: "https://www.youtube.com/watch?v=YczRHardTJI&t=735s",
-                title: "Keyboard Input to Control Your Character (Javascript Game Ep.5)",
-            }
-        ],
         github: "https://github.com/thekietvuong/Sprite-Animation-in-JavaScript"
     },
     {
         img: Project2,
         title: "Fox website",
         img_des: ImgDes2,
-        title_des: "The RedFox website",
+        subtitle: "The RedFox website",
         description: (
             <p>This project is a website about red foxes that includes interesting information about their characteristics, habitat, food, and reproduction,...
                 <br/><br/>
@@ -76,23 +58,13 @@ const projectArr: ProjectData[] = [
                 Let's click on my Youtube video links below to find out in detail how I designed the logo, and how I coded the website from scratch.
             </p>
         ),
-        youtube: [
-            {
-                link: "https://www.youtube.com/watch?v=F_xauCFSMUw&t=767s",
-                title: "Animated Responsive Navbar (Part 1) - React & CSS Animation Tutorial for Beginners",
-            },
-            {
-                link: "https://www.youtube.com/watch?v=jUg-L4ZtqwI&t=1538s",
-                title: "Page Transitions In React (Part 2) - React Router V6 and Framer Motion Tutorial",
-            }
-        ],
         github: "https://github.com/thekietvuong/The-Red-Fox-Information-Website"
     },
     {
         img: Project3,
         title: "Pokemon API",
         img_des: ImgDes3,
-        title_des: "POKEMON API",
+        subtitle: "POKEMON API",
         description: (
             <p>This project is a front-end developer test of the MOCK interview. Fetching Pokemon API with React as a framework. Once again, I took advantage of my graphic design to create a simple yet interesting UI.
                 <br/><br/>
@@ -153,7 +125,7 @@ export const Projects: React.FC = () => {
                         key={index}
                         img={item.img}
                         title={item.title}
-                        title_des={item.title_des}
+                        subtitle={item.subtitle}
                         description={item.description}
                         img_des={item.img_des}
                         github={item.github}
