@@ -14,7 +14,7 @@ export const Navbar: React.FC = () => {
         <div className="navbar" style={{
             zIndex: `${isShowNav ? "10000" : "100"} `
         }}>
-            <h1 className="intro">Joseph Quinn</h1>
+            <h1 className="intro" style={{marginLeft:"15px"}}>Joseph Quinn</h1>
             <div className={`nav-menu ${isShowNav ? "responsive_nav" : ""}`}>
                 <div className="nav-link">
                     <Link className="nav-item" to="home" onClick={() => setIsShowNav(false)} spy={true} smooth={true}
