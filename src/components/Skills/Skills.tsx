@@ -1,14 +1,17 @@
 import React, {useEffect, useRef} from "react"
 import "./skills.css"
 
-import { SiAdobeillustrator, SiAdobephotoshop } from "react-icons/si";
-import { BsBrushFill } from "react-icons/bs";
-import { DiHtml5, DiCss3, DiJavascript, DiReact } from "react-icons/di";
-import { GiPuzzle } from "react-icons/gi";
-import { TypeAnimation } from 'react-type-animation';
+import {SiExpress, SiGit, SiNetlify, SiNotion, SiNumpy, SiPandas, SiPytorch, SiVim} from "react-icons/si";
+
+
+import {DiCss3, DiFirebase, DiHtml5, DiJava, DiJavascript, DiMongodb, DiPython, DiReact} from "react-icons/di";
+import {BiLogoTypescript} from "react-icons/bi";
+
+import {FaNodeJs} from "react-icons/fa";
+import {TypeAnimation} from 'react-type-animation';
 
 import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import {ScrollTrigger} from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -32,46 +35,70 @@ const languages: Skill[] = [
         name: "Javascript",
     },
     {
-        icon: <DiReact />,
-        name: "React",
+        icon: <BiLogoTypescript/>,
+        name: "Typescript",
+    },
+    {
+        icon: <DiJava />,
+        name: "Java",
+    },
+    {
+        icon: <DiPython/>,
+        name: "Python",
     },
 ];
 
 const libraries: Skill[] = [
     {
-        icon: <SiAdobeillustrator />,
-        name: "Adobe Illustrator",
+        icon: <FaNodeJs />,
+        name: "Node",
     },
     {
-        icon: <SiAdobephotoshop />,
-        name: "Photoshop",
+        icon: <SiExpress />,
+        name: "Express",
     },
     {
-        icon: <BsBrushFill />,
-        name: "UI design",
+        icon: <SiNumpy />,
+        name: "Numpy",
     },
     {
-        icon: <GiPuzzle />,
-        name: "Critical thinking",
+        icon: <DiReact/>,
+        name: "React",
+    },
+    {
+        icon: <SiPytorch/>,
+        name: "Pytorch",
+    },
+    {
+        icon: <SiPandas />,
+        name: "Pandas",
     },
 ];
 
 const tools: Skill[] = [
     {
-        icon: <SiAdobeillustrator />,
-        name: "Adobe Illustrator",
+        icon: <SiGit />,
+        name: "Git",
     },
     {
-        icon: <SiAdobephotoshop />,
-        name: "Photoshop",
+        icon: <DiFirebase />,
+        name: "Firebase",
     },
     {
-        icon: <BsBrushFill />,
-        name: "UI design",
+        icon: <DiMongodb />,
+        name: "Mongodb",
     },
     {
-        icon: <GiPuzzle />,
-        name: "Critical thinking",
+        icon: <SiVim/>,
+        name: "Vim",
+    },
+    {
+        icon: <SiNotion/>,
+        name: "Notion",
+    },
+    {
+        icon: <SiNetlify/>,
+        name: "Netlify",
     },
 ];
 
