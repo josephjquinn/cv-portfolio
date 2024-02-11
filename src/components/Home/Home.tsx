@@ -2,8 +2,6 @@ import React, { useEffect, useRef } from "react"
 import "./home.css"
 
 import logo from "../../assets/logo.png"
-import profile1 from "../../assets/profile11.png"
-import {BsMouse} from "react-icons/bs";
 
 import gsap from "gsap";
 import {ScrollTrigger} from "gsap/ScrollTrigger";
@@ -84,10 +82,7 @@ export const Home: React.FC = () => {
                 <img src={logo} ref={logoRef}/>
             </div>
             <div className="section2" ref={triggerRef}>
-                <img src={profile1}/>
                 <div className="text-at-bottom" ref={scrollRef}>
-                    <p><BsMouse className="icon"/> SCROLL DOWN</p>
-                    <span>TO KNOW MORE ABOUT ME</span>
                 </div>
             </div>
         </div>
