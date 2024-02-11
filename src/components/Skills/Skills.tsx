@@ -140,7 +140,7 @@ export const Skills: React.FC = () => {
             <h1 ref={h1Ref}>MY SKILLS</h1>
 
             <div className="skill-intro" ref={skillIntroRef}>
-                <p><span>"</span> Almost my skills, I learn by myself. <br />Let me tell you what I can do</p>
+                <p><span></span> Below are some of my skills,<br />and I'm always looking to learn more</p>
 
                 <div className={"skills-dir"}>
 
