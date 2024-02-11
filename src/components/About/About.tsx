@@ -41,25 +41,26 @@ export const About: React.FC = () => {
             <div className="content">
                 <img src={Headshot} ref={imgRef} alt={"headshot"}></img>
                 <p className="paragraph" ref={paraRef}>
-                    Hello everyone, my name is Joseph, I'm a computer science student with a foundation in programming and problem-solving,
-                    excited about software development, AI, and tackling real-world Issues. Currently, I'm seeking opportunities to collaborate
-                    on exciting tech projects and contribute to industry growth.
+                    I'm a computer science student at Vanderbilt University, My interests include software design and
+                    development,
+                    artificial intelligence, machine learning, computer vision, and natural language processing.
                     <br/>
                     <br/>
-                    I'm deeply passionate about films, with Blade Runner (1982) and La La Land being my top choices.
-                    In terms of music, Lush by Mitski and Diamond Eyes by Deftones as my favorite albums.
+
+                    <h2>Vanderbilt University</h2>
+                    <ul>
+                        <li>Bachelor of Science: School of Engineering
+                            <ul>
+                                <li>Major: Computer Science</li>
+                                <li>Minor: Data Science</li>
+                            </ul>
+                        </li>
+                    </ul>
                     <br/>
                     <br/>
                     You can see more about my projects and skills below.
-                    <br/>
-                    <br/>
+
                 </p>
-                {/*<div className="info" ref={infoRef}>*/}
-                {/*    <p className="name">THE KIET VUONG</p>*/}
-                {/*    <p>0123 456 789</p>*/}
-                {/*    <p>vvvvvvvvv@gmail.com</p>*/}
-                {/*    <p>Ho Chi Minh City, Viet Nam</p>*/}
-                {/*</div>*/}
             </div>
         </div>
     );
