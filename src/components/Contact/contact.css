@@ -155,7 +155,7 @@
 @media screen and (min-width: 376px) and (max-width: 600px) {
     .contact {
         flex-direction: column;
-        height: 100vh;
+        height: 80vh;
     }
 
     .contact .left {
@@ -195,7 +195,7 @@
 @media screen and (min-width: 601px) and (max-width: 1023px) {
     .contact {
         flex-direction: column;
-        height: 100vh;
+        height: 80vh;
     }
 
     .contact .left {
@@ -236,7 +236,7 @@
 @media screen and (min-width: 1023px) and (max-width: 1899px) {
     .contact {
         flex-direction: column;
-        height: 100vh;
+        height: 80vh;
     }
 
     .contact .left {
@@ -259,7 +259,7 @@
 @media screen and (min-width: 1900px) {
     .contact {
         flex-direction: column;
-        height: 100vh;
+        height: 80vh;
     }
 
     .contact .left {

@@ -38,7 +38,7 @@ const Contact: React.FC = () => {
         <div className="contact">
             <div className="left" >
                 <div className="text-box">
-                    <h1 className="text-box-h1" ref={h1Ref} style={{marginBottom:"50px"}}>Contact</h1>
+                    <h1 className="text-box-h1" ref={h1Ref} style={{marginBottom:"40px"}}>Contact</h1>
                     <p className="text-box-p" ref={pRef}>
                         <a href="mailto:jquinn2005@outlook.com" style={{
                             display: "flex",
@@ -50,7 +50,7 @@ const Contact: React.FC = () => {
                             Email
                         </a>
                         <br/>
-                        <a href="https://www.linkedin.com/in/your-linkedin-profile" style={{
+                        <a href="https://www.linkedin.com/in/joseph-quinn-196b76249/" style={{
                             display: "flex",
                             justifyContent: "center", fontSize: "25px", fontFamily: "Montserrat",
                             textDecoration: "none", color: "black"
