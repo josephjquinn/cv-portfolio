@@ -2,6 +2,9 @@ import React, {useEffect, useRef} from "react";
 import "./contact.css";
 import gsap from "gsap";
 import {ScrollTrigger} from "gsap/ScrollTrigger";
+import {FaGithub, FaLinkedinIn} from "react-icons/fa";
+import {MdEmail} from "react-icons/md";
+
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -33,15 +36,43 @@ const Contact: React.FC = () => {
 
     return (
         <div className="contact">
-            <div className="left">
+            <div className="left" >
                 <div className="text-box">
-                    <h1 className="text-box-h1" ref={h1Ref}>Contact</h1>
+                    <h1 className="text-box-h1" ref={h1Ref} style={{marginBottom:"50px"}}>Contact</h1>
                     <p className="text-box-p" ref={pRef}>
-                        <a href="mailto:your.email@example.com">Email</a>
+                        <a href="mailto:jquinn2005@outlook.com" style={{
+                            display: "flex",
+                            justifyContent: "center", fontSize: "25px", fontFamily: "Montserrat",
+                            textDecoration: "none", color: "black"
+                        }}>
+
+                            <MdEmail style={{marginTop: "2px", marginRight: "5px", fontSize: "25px"}}/>
+                            Email
+                        </a>
                         <br/>
-                        <a href="https://www.linkedin.com/in/your-linkedin-profile">LinkedIn</a>
+                        <a href="https://www.linkedin.com/in/your-linkedin-profile" style={{
+                            display: "flex",
+                            justifyContent: "center", fontSize: "25px", fontFamily: "Montserrat",
+                            textDecoration: "none", color: "black"
+                        }}>
+
+                            <FaLinkedinIn style={{marginTop: "2px", marginRight: "5px", fontSize: "25px"}}/>
+                            LinkedIn
+                        </a>
                         <br/>
-                        <a href="https://github.com/your-github-profile">GitHub</a><br/><br/>
+
+
+                        <a href="https://www.github.com/josphjquinn" style={{
+                            display: "flex",
+                            justifyContent: "center", fontSize: "25px", fontFamily: "Montserrat",
+                            textDecoration: "none", color: "black"
+                        }}>
+
+                            <FaGithub style={{marginTop: "2px", marginRight: "5px", fontSize: "25px"}}/>
+                            Github
+                        </a>
+
+                        <br/><br/>
                         Joseph Quinn<br/><br/>
                         Denver, Colorado
                     </p>
