@@ -35,6 +35,11 @@
 .navbar .nav-menu .nav-link .nav-item {
     cursor: pointer;
 }
+.navbar .nav-resume button{
+    color: red;
+    border: none;
+    background: none;
+}
 
 .navbar .nav-btn {
     color: #2e2e2e;
