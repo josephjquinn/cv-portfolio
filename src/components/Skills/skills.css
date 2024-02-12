@@ -135,6 +135,20 @@
         justify-content: center;
         align-items: center;
     }
+
+    .skill-page{
+        height: 90rem;
+    }
+
+    .skill-page .skill-box h3 {
+        font-size: .8rem;
+    }
+
+    .skill-page .skill-box h2,
+    .skill-page .skill-box .icon {
+        font-size: 1.2rem;
+    }
+
 }
 @media screen and (min-width: 601px) and (max-width: 1023px) {
     .skill-page .skill-intro {
