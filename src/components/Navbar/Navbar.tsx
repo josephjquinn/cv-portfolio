@@ -69,17 +69,17 @@ export const Navbar: React.FC = () => {
                     right: "30px",
                 }}>
                     <div style={{display:"flex", flexDirection:"column"}}>
-                        <Link className="nav-item" to="home" onClick={() => setIsShowNav(false)} spy={true} smooth={true}
+                        <Link className="nav-item" to="home" onClick={() => setIsDropDown(false)} spy={true} smooth={true}
                               offset={-50} duration={600}>HOME</Link>
-                        <Link className="nav-item" to="about" onClick={() => setIsShowNav(false)} spy={true} smooth={true}
+                        <Link className="nav-item" to="about" onClick={() => setIsDropDown(false)} spy={true} smooth={true}
                               offset={-50} duration={600}>ABOUT</Link>
-                        <Link className="nav-item" to="skill-page" onClick={() => setIsShowNav(false)} spy={true} smooth={true}
+                        <Link className="nav-item" to="skill-page" onClick={() => setIsDropDown(false)} spy={true} smooth={true}
                               offset={-50} duration={600}>SKILLS</Link>
-                        <Link className="nav-item" to="project-content" onClick={() => setIsShowNav(false)} spy={true} smooth={true}
+                        <Link className="nav-item" to="project-content" onClick={() => setIsDropDown(false)} spy={true} smooth={true}
                               offset={-50} duration={600}>PROJECTS</Link>
-                        <Link className="nav-item" to="contact" onClick={() => setIsShowNav(false)} spy={true} smooth={true}
+                        <Link className="nav-item" to="contact" onClick={() => setIsDropDown(false)} spy={true} smooth={true}
                               offset={-50} duration={600}>CONTACT</Link>
-                        <Link className="nav-item" to="resume" onClick={() => setIsShowNav(false)} spy={true} smooth={true}
+                        <Link className="nav-item" to="resume" onClick={() => setIsDropDown(false)} spy={true} smooth={true}
                               offset={-50} duration={600}>RESUME</Link>
                     </div>
                 </div>
