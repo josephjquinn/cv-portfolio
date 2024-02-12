@@ -7,9 +7,16 @@ import {FaBars, FaTimes} from "react-icons/fa";
 
 export const Navbar: React.FC = () => {
     const [isShowNav, setIsShowNav] = useState(false);
+    const [isDropDown, setIsDropDown] = useState(false);
+
     const openResume = () => {
         // window.open(resumePDF, "_blank");
     };
+
+    const toggleDropDown = () => {
+        setIsDropDown(!isDropDown); // Toggle the value of isDropDown
+    };
+
     return(
         <div className="navbar" style={{
             zIndex: `${isShowNav ? "10000" : "100"} `
@@ -50,9 +57,33 @@ export const Navbar: React.FC = () => {
                         RESUME
                     </a>
                 </div>
-                <button onClick={() => setIsShowNav(false)} className="nav-btn nav-close-btn"><FaTimes/></button>
             </div>
-            <button onClick={() => setIsShowNav(true)} className="nav-btn"><FaBars/></button>
+            <button onClick={toggleDropDown} className="nav-btn">
+                {isDropDown ? <FaTimes style={{fontSize:"1.2rem"}}/> : <FaBars style={{fontSize:"1.2rem"}}/>} {/* Toggle between hamburger and close icon */}
+            </button>
+            {isDropDown && (
+                <div className="ham-menu"
+                style={{
+                    position: "absolute",
+                    top: "40px",
+                    right: "30px",
+                }}>
+                    <div style={{display:"flex", flexDirection:"column"}}>
+                        <Link className="nav-item" to="home" onClick={() => setIsShowNav(false)} spy={true} smooth={true}
+                              offset={-50} duration={600}>HOME</Link>
+                        <Link className="nav-item" to="about" onClick={() => setIsShowNav(false)} spy={true} smooth={true}
+                              offset={-50} duration={600}>ABOUT</Link>
+                        <Link className="nav-item" to="skill-page" onClick={() => setIsShowNav(false)} spy={true} smooth={true}
+                              offset={-50} duration={600}>SKILLS</Link>
+                        <Link className="nav-item" to="project-content" onClick={() => setIsShowNav(false)} spy={true} smooth={true}
+                              offset={-50} duration={600}>PROJECTS</Link>
+                        <Link className="nav-item" to="contact" onClick={() => setIsShowNav(false)} spy={true} smooth={true}
+                              offset={-50} duration={600}>CONTACT</Link>
+                        <Link className="nav-item" to="resume" onClick={() => setIsShowNav(false)} spy={true} smooth={true}
+                              offset={-50} duration={600}>RESUME</Link>
+                    </div>
+                </div>
+            )}
         </div>
     );
 }

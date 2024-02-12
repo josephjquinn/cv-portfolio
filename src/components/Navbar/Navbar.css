@@ -129,4 +129,8 @@
     .navbar .nav-btn {
         display: none;
     }
+
+    .navbar .ham-menu {
+        display: none;
+    }
 }
