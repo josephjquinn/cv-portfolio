@@ -1,301 +1,331 @@
 .project {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.content{
-    overflow: hidden;
+.content {
+  overflow: hidden;
 }
 
 .project .background {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 20rem;
-    border: solid 1px #e4e4e4;
-    overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 20rem;
+  border: solid 1px #e4e4e4;
+  overflow: hidden;
 }
 
 .project .background img {
-    width: 100%;
-    z-index: 10;
-    transition: width .6s ease-in-out;
+  width: 100%;
+  z-index: 10;
+  transition: width 0.6s ease-in-out;
 }
 
 .project .background .click-me-mate {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: black;
-    opacity: .3;
-    z-index: 11;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0.3;
+  z-index: 11;
 }
 
 .project .background .click-me {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Poiret One', cursive;
-    font-weight: bold;
-    font-size: 1.5rem;
-    height: 4rem;
-    width: 7rem;
-    color: #2e2e2e;
-    background: white;
-    border-radius: 10px;
-    z-index: 12;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poiret One", cursive;
+  font-weight: bold;
+  font-size: 1.5rem;
+  height: 4rem;
+  width: 7rem;
+  color: #2e2e2e;
+  background: white;
+  border-radius: 10px;
+  z-index: 12;
 }
 
 .project .background:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .project .background:hover img {
-    width: 120%;
+  width: 120%;
 }
 
 .project .title {
-    font-weight: 600;
+  font-weight: 600;
 }
 
-.project .intro
-{
-    display: flex;
-    align-items: center;
+.project .intro {
+  display: flex;
+  align-items: center;
 }
 
 .project .detail {
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    opacity: 1;
-    font-family: "Montserrat";
-    font-weight: 600;
-    z-index: 10000;
-    transition: all .6s ease-in-out;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  font-family: "Montserrat";
+  font-weight: 600;
+  z-index: 10000;
+  transition: all 0.6s ease-in-out;
 }
 
 .project .detail .mate {
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    background: black;
-    opacity: .5;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: black;
+  opacity: 0.5;
 }
 
 .project .detail .project-card {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    border-radius: .5rem;
-    background: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  border-radius: 0.5rem;
+  background: white;
 }
 
 .project .detail .project-card button {
-    position: fixed;
-    top: 1rem;
-    right: 1rem;
-    font-family: "Montserrat";
-    color: #2e2e2e;
-    border: none;
-    background: none;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  font-family: "Montserrat";
+  color: #2e2e2e;
+  border: none;
+  background: none;
 }
 
 .project .detail .project-card button:hover {
-    cursor: pointer;
-    opacity: .8;
+  cursor: pointer;
+  opacity: 0.8;
 }
 
 .project .detail .project-card .title-detail {
-    text-align: center;
-    font-size: smaller;
+  text-align: center;
+  font-size: smaller;
 }
 
 .project .detail .project-card .content {
-    position: absolute;
-    bottom: 0;
-    overflow-y: scroll;
-    line-height: 200%;
+  position: absolute;
+  bottom: 0;
+  overflow-y: scroll;
+  line-height: 200%;
 }
 
 .project .detail .project-card .youtube-link .icon {
-    color: rgb(255, 52, 52);
-    margin-right: .5rem;
+  color: rgb(255, 52, 52);
+  margin-right: 0.5rem;
 }
 
 .project .detail .project-card .youtube-link,
 .project .detail .project-card .github-link {
-    text-decoration: none;
-    color: #2e2e2e;
+  text-decoration: none;
+  color: #2e2e2e;
 }
 
 .project .detail .project-card .youtube-link:hover,
 .project .detail .project-card .github-link:hover {
-    opacity: .8;
-    cursor: pointer;
+  opacity: 0.8;
+  cursor: pointer;
 }
 
 /* Iphone */
 @media screen and (max-width: 350px) {
-    .project {
-        height: 18rem;
-        width: 16rem;
-    }
+  .project {
+    height: 18rem;
+    width: 16rem;
+  }
 
-    .project .project-card {
-        width: 15rem;
-        height: 30rem;
-    }
+  .project .project-card {
+    width: 15rem;
+    height: 30rem;
+  }
 
-    .project .project-card img {
-        width: 100%;
-    }
+  .project .project-card img {
+    width: 100%;
+  }
 
-    .project .project-card h2 {
-        font-size: smaller;
-    }
+  .project .project-card h2 {
+    font-size: smaller;
+  }
 
-    .project .project-card .content {
-        height: 45%;
-        font-size: .6rem;
-    }
+  .project .project-card .content {
+    height: 45%;
+    font-size: 0.6rem;
+  }
 
-    .project .project-card .content p {
-        margin: 1rem .5rem;
-        text-align: left;
-    }
+  .project .project-card .content p {
+    margin: 1rem 0.5rem;
+    text-align: left;
+  }
 }
 
 /* Iphone */
 @media screen and (min-width: 351px) and (max-width: 599px) {
-    .project {
-        height: 18rem;
-        width: 16rem;
-    }
+  .project {
+    height: 18rem;
+    width: 16rem;
+  }
 
-    .project .project-card {
-        width: 20rem;
-        height: 30rem;
-    }
+  .project .project-card {
+    width: 20rem;
+    height: 30rem;
+  }
 
-    .project .project-card img {
-        height: 9rem;
-    }
+  .project .project-card img {
+    height: 9rem;
+  }
 
-    .project .project-card h2 {
-        font-size: smaller;
-    }
+  .project .project-card h2 {
+    font-size: smaller;
+  }
 
-    .project .project-card .content {
-        height: 45%;
-        font-size: .7rem;
-    }
+  .project .project-card .content {
+    height: 45%;
+    font-size: 0.7rem;
+  }
 
-    .project .project-card .content p {
-        margin: 1rem 1rem;
-        text-align: left;
-    }
+  .project .project-card .content p {
+    margin: 1rem 1rem;
+    text-align: left;
+  }
 }
 
 /* Ipad and small tablet */
 @media screen and (min-width: 600px) and (max-width: 1023px) {
-    .project {
-        height: 22rem;
-        width: 20rem;
-    }
+  .project {
+    height: 22rem;
+    width: 20rem;
+  }
 
-    .project .project-card {
-        width: 30rem;
-        height: 40rem;
-    }
+  .project .project-card {
+    width: 30rem;
+    height: 40rem;
+  }
 
-    .project .project-card img {
-        height: 12rem;
-    }
+  .project .project-card img {
+    height: 12rem;
+  }
 
-    .project .project-card h2 {
-        font-size: medium;
-    }
+  .project .project-card h2 {
+    font-size: medium;
+  }
 
-    .project .project-card .content {
-        height: 50%;
-        font-size: .8rem;
-    }
+  .project .project-card .content {
+    height: 50%;
+    font-size: 0.8rem;
+  }
 
-    .project .project-card .content p {
-        margin: 1rem 1.5rem;
-        text-align: left;
-    }
+  .project .project-card .content p {
+    margin: 1rem 1.5rem;
+    text-align: left;
+  }
 }
 
 /* Ipad pro */
-@media screen and (min-width: 1023px) and (max-width: 1919px) {
-    .project {
-        height: 22rem;
-        width: 20rem;
-    }
+@media screen and (min-width: 1023px) and (max-width: 1250px) {
+  .project {
+    height: 22rem;
+    width: 20rem;
+  }
 
-    .project .project-card {
-        width: 50rem;
-        height: 50rem;
-    }
+  .project .project-card {
+    width: 50rem;
+    height: 50rem;
+  }
 
-    .project .project-card img {
-        height: 17rem;
-    }
+  .project .project-card img {
+    height: 17rem;
+  }
 
-    .project .project-card h2 {
-        font-size: large;
-    }
+  .project .project-card h2 {
+    font-size: large;
+  }
 
-    .project .project-card .content {
-        height: 50%;
-        font-size: 1rem;
-    }
+  .project .project-card .content {
+    height: 50%;
+    font-size: 1rem;
+  }
 
-    .project .project-card .content p {
-        margin: 1rem 2rem;
-        text-align: left;
-    }
+  .project .project-card .content p {
+    margin: 1rem 2rem;
+    text-align: left;
+  }
+}
+
+/* laptops*/
+@media screen and (min-width: 1250px) and (max-width: 1919px) {
+  .project {
+    height: 18rem;
+    width: 16rem;
+  }
+
+  .project .project-card {
+    width: 50rem;
+    height: 50rem;
+  }
+
+  .project .project-card img {
+    height: 17rem;
+  }
+
+  .project .project-card h2 {
+    font-size: large;
+  }
+
+  .project .project-card .content {
+    height: 50%;
+    font-size: 1rem;
+  }
+
+  .project .project-card .content p {
+    margin: 1rem 2rem;
+    text-align: left;
+  }
 }
 
 /* Desktop */
 @media screen and (min-width: 1920px) {
-    .project {
-        height: 22rem;
-        width: 20rem;
-    }
+  .project {
+    height: 22rem;
+    width: 20rem;
+  }
 
-    .project .project-card {
-        width: 50rem;
-        height: 50rem;
-    }
+  .project .project-card {
+    width: 50rem;
+    height: 50rem;
+  }
 
-    .project .project-card img {
-        height: 17rem;
-    }
+  .project .project-card img {
+    height: 17rem;
+  }
 
-    .project .project-card h2 {
-        font-size: large;
-    }
+  .project .project-card h2 {
+    font-size: large;
+  }
 
-    .project .project-card .content {
-        height: 50%;
-        font-size: 1rem;
-    }
+  .project .project-card .content {
+    height: 50%;
+    font-size: 1rem;
+  }
 
-    .project .project-card .content p {
-        margin: 1rem 2rem;
-        text-align: left;
-    }
+  .project .project-card .content p {
+    margin: 1rem 2rem;
+    text-align: left;
+  }
 }
