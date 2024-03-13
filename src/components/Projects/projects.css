@@ -126,20 +126,20 @@
   }
 
   .project-content .projects {
-    display: grid; 
-    grid-template-columns: repeat(3, minmax(0, 1fr)); 
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     grid-template-rows: repeat(2, minmax(0, auto));
-    grid-gap: 2rem; 
+    grid-gap: 2rem;
     justify-items: center;
-    align-items: center; 
+    align-items: center;
     padding-left: 20rem;
-    padding-right: 20rem; /
+    padding-right: 20rem;
   }
 
   .project-content .projects .project {
-    margin: 0; 
+    margin: 0;
     grid-column: span 1;
-    grid-row: span 1; 
+    grid-row: span 1;
   }
 }
 
