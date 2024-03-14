@@ -47,8 +47,8 @@ export const About: React.FC = () => {
         <img src={Headshot} ref={imgRef} alt={"headshot"}></img>
         <p className="paragraph" ref={paraRef}>
           I'm a computer science student at Vanderbilt University, My interests
-          include software design and development, artificial intelligence,
-          machine learning, computer vision, and natural language processing.
+          include software design and development, machine learning, computer
+          vision, and natural language processing.
           <br />
           <br />
           <h2>Vanderbilt University</h2>
@@ -56,7 +56,7 @@ export const About: React.FC = () => {
             <li>
               Bachelor of Science: School of Engineering
               <ul>
-                <li>Major: Computer Science</li>
+                <li>Major: Computer Science & Math</li>
                 <li>Minor: Data Science</li>
               </ul>
             </li>
