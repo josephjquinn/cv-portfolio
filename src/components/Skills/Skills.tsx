@@ -9,6 +9,7 @@ import {
   SiNumpy,
   SiPandas,
   SiPrisma,
+  SiPytorch,
   SiReact,
   SiTypescript,
 } from "react-icons/si";
@@ -70,7 +71,7 @@ const data: Skill[] = [
     name: "Numpy",
   },
   {
-    icon: <DiPython />,
+    icon: <SiPytorch />,
     name: "Pytorch",
   },
   {
