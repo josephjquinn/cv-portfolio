@@ -152,7 +152,7 @@ const projectArr: ProjectData[] = [
     img: mtm,
     title: "Mother To Mother Web App",
     img_des: mtm_des,
-    subtitle: "Compression Algorithm",
+    subtitle: "Fullstack Application",
     description: (
       <p>
         The Mother to Mother web app is a project delieverable for the mother to
