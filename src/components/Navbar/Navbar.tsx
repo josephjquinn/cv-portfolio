@@ -2,18 +2,18 @@ import React, { useState } from "react";
 import "./Navbar.css";
 import Link from "react-scroll/modules/components/Link";
 import { FaBars, FaTimes } from "react-icons/fa";
-// import resumePDF from "../../assets/JosephQuinnResume.pdf";
+import resumePDF from "../../assets/JosephQuinnResume.pdf";
 
 export const Navbar: React.FC = () => {
   const [isShowNav, setIsShowNav] = useState(false);
   const [isDropDown, setIsDropDown] = useState(false);
 
   const openResume = () => {
-    // window.open(resumePDF, "_blank");
+    window.open(resumePDF, "_blank");
   };
 
   const toggleDropDown = () => {
-    setIsDropDown(!isDropDown); // Toggle the value of isDropDown
+    setIsDropDown(!isDropDown);
   };
 
   return (
