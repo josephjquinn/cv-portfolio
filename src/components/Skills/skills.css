@@ -9,14 +9,14 @@
 
 .skills-dir {
   display: flex;
-  flex-direction: column; /* Stack contents on top of each other */
-  justify-content: center; /* Center content horizontally */
-  align-items: center; /* Center content vertically */
-  height: 100%; /* Set the height to 100% to center vertically within its parent */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 .skill-page h1 {
-  margin-top: 2rem; /* Adjusted margin */
+  margin-top: 2rem;
   color: #2e2e2e;
 }
 
@@ -26,12 +26,13 @@
   padding: 1rem;
   font-weight: 600;
   font-size: small;
+  margin-top: 30px;
 }
 
 .skill-page .skill-box .left,
 .skill-page .skill-box .middle,
 .skill-page .skill-box .right {
-  width: 33.33%; /* Equal width for all columns */
+  width: 33.33%;
   height: 100%;
 }
 
