@@ -163,11 +163,11 @@
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     grid-template-rows: repeat(2, minmax(0, auto));
-    grid-gap: 0rem;
+    grid-gap: 2rem;
     justify-items: center;
     align-items: center;
-    padding-left: 40rem;
-    padding-right: 40rem;
+    padding-left: 30rem;
+    padding-right: 30rem;
   }
 
   .project-content .projects .project {
