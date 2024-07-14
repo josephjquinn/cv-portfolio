@@ -5,6 +5,12 @@
   margin: 0 auto;
   font-family: "Montserrat", sans-serif;
   overflow: hidden;
+  margin-top: 10rem;
+
+}
+
+.skills-box{
+  margin-top: 10rem;
 }
 
 .skills-dir {
@@ -47,6 +53,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   height: auto;
   width: 100%;
 }
@@ -214,12 +221,12 @@
     font-size: 2rem;
   }
   .skill-page .skill-intro .code-box {
-    width: 40rem;
+    width: 60rem;
   }
   .skill-page .skill-box {
     top: 25rem;
     right: 10%;
-    width: 40rem;
+    width: 60rem;
   }
   .skill-page .skill-box h2,
   .skill-page .skill-box .icon {
@@ -254,7 +261,7 @@
     font-size: 2rem;
   }
   .skill-page .skill-intro .code-box {
-    width: 40rem;
+    width: 60rem;
   }
   .skill-page .skill-intro .code-box pre {
     font-size: 1rem;
@@ -270,7 +277,7 @@
   .skill-page .skill-box {
     top: 25rem;
     right: 10%;
-    width: 40rem;
+    width: 60rem;
   }
   .skill-page .skill-box h2 {
     font-size: 1.5rem;

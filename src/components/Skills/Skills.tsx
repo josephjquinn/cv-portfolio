@@ -3,13 +3,19 @@ import "./skills.css";
 
 import { FaAws } from "react-icons/fa";
 import {
+  SiAmazonaws,
+  SiDocker,
   SiExpress,
+  SiFlask,
   SiGit,
+  SiJunit5,
+  SiMongodb,
   SiMysql,
   SiNumpy,
   SiPandas,
   SiPrisma,
   SiPytorch,
+  SiR,
   SiReact,
   SiTypescript,
 } from "react-icons/si";
@@ -20,6 +26,7 @@ import {
   DiHtml5,
   DiJava,
   DiJavascript,
+  DiMysql,
   DiPython,
 } from "react-icons/di";
 import { GoGraph } from "react-icons/go";
@@ -41,19 +48,12 @@ interface Skill {
 const languages: Skill[] = [
   {
     icon: <DiHtml5 />,
-    name: "HTML",
+    name: "HTML/CSS",
   },
-  {
-    icon: <DiCss3 />,
-    name: "CSS",
-  },
+
   {
     icon: <DiJavascript />,
-    name: "Javascript",
-  },
-  {
-    icon: <SiTypescript />,
-    name: "Typescript",
+    name: "Javascript/ Typescript",
   },
   {
     icon: <DiJava />,
@@ -62,6 +62,10 @@ const languages: Skill[] = [
   {
     icon: <DiPython />,
     name: "Python",
+  },
+  {
+    icon: <DiMysql />,
+    name: "MYSQL",
   },
 ];
 
@@ -83,41 +87,62 @@ const data: Skill[] = [
     name: "Pandas",
   },
   {
-    icon: <SiMysql />,
-    name: "MySQL",
+    icon: <SiR />,
+    name: "R",
   },
-  {
-    icon: <SiPrisma />,
-    name: "Prisma",
-  },
+ 
+ 
 ];
 
-const webdev: Skill[] = [
+const frameworks: Skill[] = [
   {
     icon: <FaNodeJs />,
     name: "NodeJS",
   },
-  {
-    icon: <SiExpress />,
-    name: "ExpressJS",
-  },
+  
   {
     icon: <SiReact />,
     name: "React",
   },
   {
+    icon: <SiPrisma />,
+    name: "Prisma",
+  },
+  {
+    icon: <SiFlask />,
+    name: "Flask",
+  },
+
+  {
+    icon: <SiJunit5 />,
+    name: "JUnit",
+  },
+];
+
+const tools: Skill[] = [
+ 
+  {
     icon: <SiGit />,
     name: "Git",
   },
+  {
+    icon: <SiMongodb />,
+    name: "Mongodb",
+  }, 
+
   {
     icon: <DiFirebase />,
     name: "Firebase",
   },
   {
+    icon: <SiDocker />,
+    name: "Docker",
+  },
+  {
     icon: <FaAws />,
     name: "AWS",
   },
-];
+]
 
 export const Skills: React.FC = () => {
   const h1Ref = useRef<HTMLHeadingElement>(null);
@@ -158,6 +183,7 @@ export const Skills: React.FC = () => {
 
   return (
     <div className="skill-page">
+      <div className="skills-box">
       <h1 ref={h1Ref}>MY SKILLS</h1>
 
       <div className="skill-intro" ref={skillIntroRef}>
@@ -193,7 +219,7 @@ export const Skills: React.FC = () => {
 
           <div className="skill-box" ref={skillBoxRef}>
             <div className="left">
-              <h2 style={{ textAlign: "left" }}>LANGUAGES</h2>
+              <h2 style={{ textAlign: "center" }}>LANGUAGES</h2>
               <div className="skill-dex">
                 {languages.map((item, index) => (
                   <div className="skill" key={index}>
@@ -206,7 +232,20 @@ export const Skills: React.FC = () => {
               </div>
             </div>
             <div className="middle">
-              <h2 style={{ textAlign: "left" }}>DATA</h2>
+              <h2 style={{ textAlign: "center" }}>FRAMEWORKS</h2>
+              <div className="skill-dex">
+                {frameworks.map((item, index) => (
+                  <div className="skill" key={index}>
+                    <div className="icon">{item.icon}</div>
+                    <div className="skill-info">
+                      <h3>{item.name}</h3>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div className="right">
+              <h2 style={{ textAlign: "center" }}>DATA</h2>
               <div className="skill-dex">
                 {data.map((item, index) => (
                   <div className="skill" key={index}>
@@ -219,9 +258,9 @@ export const Skills: React.FC = () => {
               </div>
             </div>
             <div className="right">
-              <h2 style={{ textAlign: "left" }}>WEB</h2>
+              <h2 style={{ textAlign: "center" }}>DEV TOOLS</h2>
               <div className="skill-dex">
-                {webdev.map((item, index) => (
+                {tools.map((item, index) => (
                   <div className="skill" key={index}>
                     <div className="icon">{item.icon}</div>
                     <div className="skill-info">
@@ -234,6 +273,7 @@ export const Skills: React.FC = () => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };
