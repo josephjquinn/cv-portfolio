@@ -173,6 +173,23 @@
 }
 
 @media screen and (min-width: 601px) and (max-width: 1023px) {
+  .skill-page .skill-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    grid-template-rows: auto; /* Auto height */
+    gap: 1rem; /* Gap between grid items */
+    top: 25rem;
+    right: 10%;
+    width: 60rem;
+    justify-content: center;
+  }
+  .skill-page .skill-box .left,
+  .skill-page .skill-box .middle,
+  .skill-page .skill-box .right {
+    width: 100%; /* Full width for each section in the grid */
+  }
+
+  .skill
   .skill-page .skill-intro {
     top: 7rem;
     right: 10%;
@@ -210,6 +227,21 @@
 }
 
 @media screen and (min-width: 1024px) {
+  .skill-page .skill-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: auto; 
+    gap: 1rem; 
+    top: 25rem;
+    right: 10%;
+    width: 60rem;
+    justify-content: center;
+  }
+  .skill-page .skill-box .left,
+  .skill-page .skill-box .middle,
+  .skill-page .skill-box .right {
+    width: 100%; 
+  }
   .skill-page .skill-intro {
     top: 7rem;
     right: 10%;
@@ -250,6 +282,10 @@
 }
 
 @media screen and (min-width: 1900px) {
+  .skill-page .left-two .right-two {
+    display: flex;
+
+  }
   .skill-page .skill-intro {
     top: 7rem;
     right: 10%;

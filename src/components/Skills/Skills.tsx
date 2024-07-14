@@ -90,8 +90,6 @@ const data: Skill[] = [
     icon: <SiR />,
     name: "R",
   },
- 
- 
 ];
 
 const frameworks: Skill[] = [
@@ -99,7 +97,7 @@ const frameworks: Skill[] = [
     icon: <FaNodeJs />,
     name: "NodeJS",
   },
-  
+
   {
     icon: <SiReact />,
     name: "React",
@@ -120,7 +118,6 @@ const frameworks: Skill[] = [
 ];
 
 const tools: Skill[] = [
- 
   {
     icon: <SiGit />,
     name: "Git",
@@ -128,7 +125,7 @@ const tools: Skill[] = [
   {
     icon: <SiMongodb />,
     name: "Mongodb",
-  }, 
+  },
 
   {
     icon: <DiFirebase />,
@@ -142,7 +139,7 @@ const tools: Skill[] = [
     icon: <FaAws />,
     name: "AWS",
   },
-]
+];
 
 export const Skills: React.FC = () => {
   const h1Ref = useRef<HTMLHeadingElement>(null);
@@ -184,96 +181,96 @@ export const Skills: React.FC = () => {
   return (
     <div className="skill-page">
       <div className="skills-box">
-      <h1 ref={h1Ref}>MY SKILLS</h1>
+        <h1 ref={h1Ref}>MY SKILLS</h1>
 
-      <div className="skill-intro" ref={skillIntroRef}>
-        <p>
-          <span></span> Below are some of my skills,
-          <br />
-          and I'm always looking to learn more
-        </p>
+        <div className="skill-intro" ref={skillIntroRef}>
+          <p>
+            <span></span> Below are some of my skills,
+            <br />
+            and I'm always looking to learn more
+          </p>
 
-        <div className={"skills-dir"}>
-          <div className="code-box">
-            <TypeAnimation
-              preRenderFirstString={true}
-              sequence={[
-                500,
-                "Frontend: HTML, CSS, React",
-                1000,
-                "Languages: Java, Python, Typescript",
-                1000,
-                "Backend: Node.js, Express.js",
-                1000,
-                "Databases: MongoDB, MySQL, Firebase",
-                500,
-              ]}
-              speed={50}
-              style={{
-                fontSize: "20px",
-                fontFamily: "Courier New, Courier, monospace",
-              }}
-              repeat={Infinity}
-            />
-          </div>
+          <div className={"skills-dir"}>
+            <div className="code-box">
+              <TypeAnimation
+                preRenderFirstString={true}
+                sequence={[
+                  500,
+                  "Frontend: HTML, CSS, React",
+                  1000,
+                  "Languages: Java, Python, Typescript",
+                  1000,
+                  "Backend: Node.js, Express.js",
+                  1000,
+                  "Databases: MongoDB, MySQL, Firebase",
+                  500,
+                ]}
+                speed={50}
+                style={{
+                  fontSize: "20px",
+                  fontFamily: "Courier New, Courier, monospace",
+                }}
+                repeat={Infinity}
+              />
+            </div>
 
-          <div className="skill-box" ref={skillBoxRef}>
-            <div className="left">
-              <h2 style={{ textAlign: "center" }}>LANGUAGES</h2>
-              <div className="skill-dex">
-                {languages.map((item, index) => (
-                  <div className="skill" key={index}>
-                    <div className="icon">{item.icon}</div>
-                    <div className="skill-info">
-                      <h3>{item.name}</h3>
+            <div className="skill-box" ref={skillBoxRef}>
+              <div className="left">
+                <h2 style={{ textAlign: "center" }}>LANGUAGES</h2>
+                <div className="skill-dex">
+                  {languages.map((item, index) => (
+                    <div className="skill" key={index}>
+                      <div className="icon">{item.icon}</div>
+                      <div className="skill-info">
+                        <h3>{item.name}</h3>
+                      </div>
                     </div>
-                  </div>
-                ))}
+                  ))}
+                </div>
               </div>
-            </div>
-            <div className="middle">
-              <h2 style={{ textAlign: "center" }}>FRAMEWORKS</h2>
-              <div className="skill-dex">
-                {frameworks.map((item, index) => (
-                  <div className="skill" key={index}>
-                    <div className="icon">{item.icon}</div>
-                    <div className="skill-info">
-                      <h3>{item.name}</h3>
+              <div className="middle">
+                <h2 style={{ textAlign: "center" }}>FRAMEWORKS</h2>
+                <div className="skill-dex">
+                  {frameworks.map((item, index) => (
+                    <div className="skill" key={index}>
+                      <div className="icon">{item.icon}</div>
+                      <div className="skill-info">
+                        <h3>{item.name}</h3>
+                      </div>
                     </div>
-                  </div>
-                ))}
+                  ))}
+                </div>
               </div>
-            </div>
-            <div className="right">
-              <h2 style={{ textAlign: "center" }}>DATA</h2>
-              <div className="skill-dex">
-                {data.map((item, index) => (
-                  <div className="skill" key={index}>
-                    <div className="icon">{item.icon}</div>
-                    <div className="skill-info">
-                      <h3>{item.name}</h3>
+              <div className="right">
+                <h2 style={{ textAlign: "center" }}>DATA</h2>
+                <div className="skill-dex">
+                  {data.map((item, index) => (
+                    <div className="skill" key={index}>
+                      <div className="icon">{item.icon}</div>
+                      <div className="skill-info">
+                        <h3>{item.name}</h3>
+                      </div>
                     </div>
-                  </div>
-                ))}
+                  ))}
+                </div>
               </div>
-            </div>
-            <div className="right">
-              <h2 style={{ textAlign: "center" }}>DEV TOOLS</h2>
-              <div className="skill-dex">
-                {tools.map((item, index) => (
-                  <div className="skill" key={index}>
-                    <div className="icon">{item.icon}</div>
-                    <div className="skill-info">
-                      <h3>{item.name}</h3>
+              <div className="right">
+                <h2 style={{ textAlign: "center" }}>DEV TOOLS</h2>
+                <div className="skill-dex">
+                  {tools.map((item, index) => (
+                    <div className="skill" key={index}>
+                      <div className="icon">{item.icon}</div>
+                      <div className="skill-info">
+                        <h3>{item.name}</h3>
+                      </div>
                     </div>
-                  </div>
-                ))}
+                  ))}
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
     </div>
   );
 };
