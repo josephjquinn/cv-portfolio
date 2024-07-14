@@ -6,14 +6,23 @@ import wordwise from "../../assets/projects/wordwise.png";
 import wordwise_des from "../../assets/projects/wordwise-info.png";
 import huffman from "../../assets/projects/huffman.png";
 import huffman_des from "../../assets/projects/huffman-info.png";
-import snakedql from "../../assets/projects/sdl.png";
-import snakedql_des from "../../assets/projects/sdl-info.png";
+import snakedql from "../../assets/projects/snake.png";
+import snakedql_des from "../../assets/projects/snakeinfo.png";
 import asl from "../../assets/projects/asl.png";
-import asl_des from "../../assets/projects/asl-info.png";
+import asl_des from "../../assets/projects/gesture.png";
 import mtm from "../../assets/projects/mtm.png";
 import mtm_des from "../../assets/projects/mtm-info.png";
 import nvim from "../../assets/projects/nvim.png";
 import nvim_des from "../../assets/projects/nvim-info.png";
+
+import av from "../../assets/projects/av.png";
+import av_des from "../../assets/projects/av-info.png";
+import DOE from "../../assets/projects/DOE.png";
+import DOE_des from "../../assets/projects/DOE-info.png";
+import nn from "../../assets/projects/nn.png";
+import nn_des from "../../assets/projects/nn-info.png";
+import folio from "../../assets/projects/portfolio.png";
+import folio_des from "../../assets/projects/port2.png";
 
 import logo from "../../assets/logo.png";
 
@@ -200,7 +209,103 @@ const projectArr: ProjectData[] = [
       </p>
     ),
     github: "https://github.com/josephjquinn/nvim",
-  }
+  },
+  {
+    img: av,
+    title: "Avit Visualization",
+    img_des: av_des,
+    subtitle: "Fullstack Application",
+    description: (
+      <p>
+        The Mother to Mother web app is a project delieverable for the mother to
+        mother non-profit in Nashville, TN. It's function is to tracking
+        incoming and outgoing donations for mothers in need. Our team created
+        created a client-side frontend using React Typscript, PWA, and firebase,
+        incorporating real time synchronization and session management.
+        <br />
+        <br />
+        This project utilized a custom backed server and database using
+        typescript and SQL, to manage user data and donation information. The
+        databse utilized CRUD API's to communicate with the forntend.
+        <br />
+        <br />
+        See Github for more information and detailed documentation
+      </p>
+    ),
+    github: "https://github.com/ChangePlusPlusVandy/MotherToMother",
+  },
+  {
+    img: nn,
+    title: "nnScratch",
+    img_des: nn_des,
+    subtitle: "Fullstack Application",
+    description: (
+      <p>
+        The Mother to Mother web app is a project delieverable for the mother to
+        mother non-profit in Nashville, TN. It's function is to tracking
+        incoming and outgoing donations for mothers in need. Our team created
+        created a client-side frontend using React Typscript, PWA, and firebase,
+        incorporating real time synchronization and session management.
+        <br />
+        <br />
+        This project utilized a custom backed server and database using
+        typescript and SQL, to manage user data and donation information. The
+        databse utilized CRUD API's to communicate with the forntend.
+        <br />
+        <br />
+        See Github for more information and detailed documentation
+      </p>
+    ),
+    github: "https://github.com/ChangePlusPlusVandy/MotherToMother",
+  },
+  {
+    img: DOE,
+    title: "DOE Presentation",
+    img_des: DOE_des,
+    subtitle: "Fullstack Application",
+    description: (
+      <p>
+        The Mother to Mother web app is a project delieverable for the mother to
+        mother non-profit in Nashville, TN. It's function is to tracking
+        incoming and outgoing donations for mothers in need. Our team created
+        created a client-side frontend using React Typscript, PWA, and firebase,
+        incorporating real time synchronization and session management.
+        <br />
+        <br />
+        This project utilized a custom backed server and database using
+        typescript and SQL, to manage user data and donation information. The
+        databse utilized CRUD API's to communicate with the forntend.
+        <br />
+        <br />
+        See Github for more information and detailed documentation
+      </p>
+    ),
+    github: "https://github.com/ChangePlusPlusVandy/MotherToMother",
+  },
+  {
+    img: folio,
+    title: "Custom Portfolio Sites",
+    img_des: folio_des,
+    subtitle: "Fullstack Application",
+    description: (
+      <p>
+        The Mother to Mother web app is a project delieverable for the mother to
+        mother non-profit in Nashville, TN. It's function is to tracking
+        incoming and outgoing donations for mothers in need. Our team created
+        created a client-side frontend using React Typscript, PWA, and firebase,
+        incorporating real time synchronization and session management.
+        <br />
+        <br />
+        This project utilized a custom backed server and database using
+        typescript and SQL, to manage user data and donation information. The
+        databse utilized CRUD API's to communicate with the forntend.
+        <br />
+        <br />
+        See Github for more information and detailed documentation
+      </p>
+    ),
+    github: "https://github.com/ChangePlusPlusVandy/MotherToMother",
+  },
 ];
 
 export const Projects: React.FC = () => {
