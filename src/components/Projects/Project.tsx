@@ -9,6 +9,7 @@ interface ProjectProps {
   subtitle: string;
   img_des: string;
   description: JSX.Element;
+  stack?: string;
   github?: string;
 }
 
@@ -18,6 +19,7 @@ export default function Project({
   subtitle,
   img_des,
   description,
+  stack,
   github,
 }: ProjectProps) {
   const [isClick, setIsClick] = useState<boolean>(false);
@@ -111,8 +113,35 @@ export default function Project({
                     </div>
                   </a>
                 )}
+
+              
+      
               </m.div>
-            </div>
+           
+              </div>
+
+              {stack && 
+              (
+
+
+              <m.div
+                initial={{ opacity: 0, y: 200 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: 200 }}
+                transition={{ delay: 0.2, duration: 0.6, ease: easeInOut }}
+              >
+                <div style={{display: "flex", justifyContent: "center", alignItems: "center", marginBottom: "0px"}}>
+                  <h2 style={{fontWeight: "1000", marginRight: "10px"}}>
+                    Tech Stack:  
+                  </h2>
+                  <h2>
+                    {stack}
+                  </h2>
+               </div>
+
+
+              </m.div>
+                      )}
 
             <m.div
               className="content"

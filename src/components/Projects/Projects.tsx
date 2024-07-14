@@ -28,6 +28,7 @@ interface ProjectData {
   subtitle: string;
   img_des: string;
   description: JSX.Element;
+  stack?: string;
   github?: string;
 }
 
@@ -84,12 +85,17 @@ const projectArr: ProjectData[] = [
         action the snake takes has the potential for a change in the reward
         score, the snake wants to increase its reward at all times and the model
         trains itself to be the most effect at this task.
+        This system relies on a reward system in order to train the model, every
+        action the snake takes has the potential for a change in the reward
+        score, the snake wants to increase its reward at all times and the model
+        trains itself to be the most effect at this task.
         <br />
         <br />
         See Github for more information and detailed documentation
       </p>
     ),
     github: "https://github.com/josephjquinn/Snake-Deep-Learning",
+    stack: "Python, PyTorch, NumPy",
   },
   {
     img: huffman,
@@ -194,7 +200,7 @@ const projectArr: ProjectData[] = [
       </p>
     ),
     github: "https://github.com/josephjquinn/nvim",
-  },
+  }
 ];
 
 export const Projects: React.FC = () => {
@@ -261,6 +267,7 @@ export const Projects: React.FC = () => {
             description={item.description}
             img_des={item.img_des}
             github={item.github}
+            stack={item.stack}
           />
         ))}
       </div>
