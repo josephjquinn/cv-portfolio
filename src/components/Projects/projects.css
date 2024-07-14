@@ -113,8 +113,13 @@
 
 /*laptops*/
 @media screen and (min-width: 1510px) and (max-width: 1919px) {
+  .project-content{
+    overflow: auto;
+  }
+
   .project-content .intro {
     margin: 0 5rem;
+    margin-top: 10rem;
   }
 
   .project-content .intro .logo {
@@ -146,8 +151,11 @@
 
 /* Desktop */
 @media screen and (min-width: 1920px) {
+  .project-content{
+    overflow: auto;
+  }
   .project-content .intro {
-    margin: 0 2rem;
+    margin: 3rem 2rem;
   }
 
   .project-content .intro .logo {
