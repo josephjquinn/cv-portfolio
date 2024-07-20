@@ -6,20 +6,17 @@
 }
 .timeline-date {
   font-size: 0.8rem !important;
-  white-space: pre-wrap; 
-  word-break: break-word; 
-  hyphens: auto; 
-  overflow-wrap: break-word; 
-
-
+  white-space: pre-wrap;
+  word-break: break-word;
+  hyphens: auto;
+  overflow-wrap: break-word;
 }
-.timeline-name   {
+.timeline-name {
   font-size: 1rem !important;
-  white-space: pre-wrap; 
-  word-break: break-word; 
-  hyphens: auto; 
-  overflow-wrap: break-word; 
-
+  white-space: pre-wrap;
+  word-break: break-word;
+  hyphens: auto;
+  overflow-wrap: break-word;
 }
 .about .content {
   position: absolute;
@@ -53,7 +50,6 @@
   font-size: 1.5rem;
 }
 
-
 .about .content .exp-container {
   display: flex;
   align-items: center;
@@ -81,9 +77,9 @@
   }
 
   .timeline-name {
-    font-size:1rem !important;
+    font-size: 1rem !important;
   }
-  .exp-container{
+  .exp-container {
     margin-bottom: 90px;
   }
 }
@@ -109,7 +105,7 @@
   .timeline-name {
     font-size: 1.2rem !important;
   }
-  .exp-container{
+  .exp-container {
     margin-bottom: 90px;
   }
 }
@@ -121,7 +117,7 @@
   }
   .about .content {
     width: 35rem;
-    font-size:1rem;
+    font-size: 1rem;
     line-height: 180%;
   }
   .about .content .exp-container {
@@ -134,7 +130,7 @@
   .timeline-name {
     font-size: 1.2rem !important;
   }
-  .exp-container{
+  .exp-container {
     margin-bottom: 90px;
   }
 }
@@ -148,9 +144,8 @@
     width: 60rem;
     font-size: 1rem;
     line-height: 200%;
-
   }
-  
+
   .timeline-date {
     font-size: 0.8rem !important;
   }

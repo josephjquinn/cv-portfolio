@@ -70,37 +70,46 @@ export const About: React.FC = () => {
             <div>
               <Timeline position="alternate">
                 <TimelineItem>
-                  <TimelineOppositeContent className="timeline-date" color="text.secondary">
+                  <TimelineOppositeContent
+                    className="timeline-date"
+                    color="text.secondary"
+                  >
                     January 2019 - March 2020
                   </TimelineOppositeContent>
                   <TimelineSeparator>
-                  <TimelineDot variant="outlined" />
-                  <TimelineConnector />
+                    <TimelineDot variant="outlined" />
+                    <TimelineConnector />
                   </TimelineSeparator>
-                  <TimelineContent  className="timeline-name">
+                  <TimelineContent className="timeline-name">
                     Lockheed Martin Engineering Explorers Post
                   </TimelineContent>
                 </TimelineItem>
                 <TimelineItem>
-                  <TimelineOppositeContent className="timeline-date" color="text.secondary">
+                  <TimelineOppositeContent
+                    className="timeline-date"
+                    color="text.secondary"
+                  >
                     August 2023 - Present
                   </TimelineOppositeContent>
                   <TimelineSeparator>
-                  <TimelineDot variant="outlined" />
-                  <TimelineConnector />
+                    <TimelineDot variant="outlined" />
+                    <TimelineConnector />
                   </TimelineSeparator>
                   <TimelineContent className="timeline-name">
                     Vanderbilt Change++ Developer
                   </TimelineContent>
                 </TimelineItem>
                 <TimelineItem>
-                  <TimelineOppositeContent className="timeline-date" color="text.secondary">
+                  <TimelineOppositeContent
+                    className="timeline-date"
+                    color="text.secondary"
+                  >
                     May 2024 - August 2024
                   </TimelineOppositeContent>
                   <TimelineSeparator>
-                  <TimelineDot variant="outlined" />
-                  <TimelineConnector />
-                  </TimelineSeparator >
+                    <TimelineDot variant="outlined" />
+                    <TimelineConnector />
+                  </TimelineSeparator>
                   <TimelineContent className="timeline-name">
                     ORNL Machine Learning Intern
                   </TimelineContent>
@@ -115,4 +124,3 @@ export const About: React.FC = () => {
     </div>
   );
 };
-
