@@ -34,6 +34,17 @@
   font-size: 1.5rem;
 }
 
+.timeline-opposite-content {
+  white-space: break=spaces; /* Prevent text from wrapping */
+  overflow: hidden;    /* Hide overflowed text */
+}
+
+.about .content .exp-container{
+   display: flex;
+   align-items:center;
+   justify-content: center;
+}
+
 /* Iphone */
 @media screen and (max-width: 350px) {
   .about {
@@ -70,6 +81,12 @@
     font-size: 0.8rem;
     line-height: 180%;
   }
+  .about .content .exp-container {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    }
+
 }
 
 /* Ipad pro */
@@ -78,7 +95,7 @@
     height: 100vh;
   }
   .about .content {
-    width: 45rem;
+    width: 65rem;
     font-size: 0.9rem;
     line-height: 200%;
   }
@@ -90,7 +107,7 @@
     height: 100vh;
   }
   .about .content {
-    width: 50rem;
+    /* width: 70rem; */
     font-size: 0.9rem;
     line-height: 200%;
   }
