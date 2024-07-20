@@ -56,6 +56,11 @@
     line-height: 180%;
     top: 30%;
   }
+  .about .content .exp-container {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    }
 }
 
 /* Iphone */
@@ -69,6 +74,11 @@
     line-height: 180%;
     top: 30%;
   }
+  .about .content .exp-container {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    }
 }
 
 /* Ipad and small tablet */
