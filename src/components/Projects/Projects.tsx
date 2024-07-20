@@ -160,8 +160,8 @@ const projectArr: ProjectData[] = [
     title: "Mother To Mother Web App",
     img_des: mtm_des,
     subtitle: "Fullstack Application",
-    github: "https://github.com/ChangePlusPlusVandy/MotherToMother",
-    stack: "Typescript, React, MYSQL, Prisma, FFirebase, AWS:RDS/EC2, ",
+    github: "https://github.com/mtmvuse/MotherToMother",
+    stack: "Typescript, React, MYSQL, Prisma, FFirebase, AWS:RDS/EC2",
     description: (
       <p>
         The Mother to Mother web app is a project delieverable for the mother to
@@ -171,15 +171,12 @@ const projectArr: ProjectData[] = [
         <br />
         Our team created created a client-side frontend using React Typscript,
         PWA, and firebase, incorporating real time synchronization and session
-        management.
+        management. This project utilized a custom backed server and database
+        using MYSQL and Prisma, in order manage user data and donation
+        information. Additionally, we developed an admin dashboard to manage
+        users and view overall metrics, enhancing the system's efficiency and
+        transparency. The application was deolpyed using AWS EC2 and RDS.
         <br />
-        This project utilized a custom backed server and database using MYSQL
-        and Prisma, in order manage user data and donation information.
-        <br />
-        Additionally, we developed an admin dashboard to manage users and view
-        overall metrics, enhancing the system's efficiency and transparency.
-        <br />
-        The application was deolpyed using AWS EC2 and RDS.
         <br />
         See Github for more information and detailed documentation
       </p>
@@ -231,7 +228,7 @@ const projectArr: ProjectData[] = [
         See Github for more information and detailed documentation
       </p>
     ),
-    github: "https://github.com/ChangePlusPlusVandy/MotherToMother",
+    github: "https://github.com/josephjquinn/avit-vis",
   },
   {
     img: nn,
@@ -240,43 +237,44 @@ const projectArr: ProjectData[] = [
     subtitle: "Fullstack Application",
     description: (
       <p>
-        The Mother to Mother web app is a project delieverable for the mother to
-        mother non-profit in Nashville, TN. It's function is to tracking
-        incoming and outgoing donations for mothers in need. Our team created
-        created a client-side frontend using React Typscript, PWA, and firebase,
-        incorporating real time synchronization and session management.
+        This project implements a feedforward neural network class entirely from
+        scratch without using machine learning libraries, performing the
+        propagation equations manually using calculus fundamentals. This network
+        features customizable architecture and training options, and a
+        hyperparameter optimization script for automatically fine tuning network
+        parameters.
         <br />
         <br />
-        This project utilized a custom backed server and database using
-        typescript and SQL, to manage user data and donation information. The
-        databse utilized CRUD API's to communicate with the forntend.
+        Key features of the implementation include support for ReLU, Sigmoid,
+        and Leaky ReLU activation functions, a cross-entropy loss function for
+        classification tasks, and initialization methods such as Xavier, He, and
+        Numpy rand. The training process includes options for mini-batch
+        training with customizable batch size and real-time plots of training
+        loss, validation loss, and accuracy, and single and grid predictions on
+        unseen data.
         <br />
         <br />
         See Github for more information and detailed documentation
       </p>
     ),
-    github: "https://github.com/ChangePlusPlusVandy/MotherToMother",
+    github: "https://github.com/josephjquinn/nnScratch",
   },
   {
     img: DOE,
     title: "DOE Presentation",
     img_des: DOE_des,
-    subtitle: "Fullstack Application",
+    subtitle: "Optimizing Vision Transformers for Fluid Dynamics",
     description: (
       <p>
-        The Mother to Mother web app is a project delieverable for the mother to
-        mother non-profit in Nashville, TN. It's function is to tracking
-        incoming and outgoing donations for mothers in need. Our team created
-        created a client-side frontend using React Typscript, PWA, and firebase,
-        incorporating real time synchronization and session management.
+        At the 2024 DOE Innovation Conference, I presented research on
+        optimizing Axial Vision Transformers for computational fluid dynamics.
+        The study focused on hyperparameter sensitivity, demonstrating the
+        relationship between improvements in accuracy and increases in training
+        time. This research highlighted advancements in model efficiency and
+        accuracy for fluid dynamics simulations.
         <br />
         <br />
-        This project utilized a custom backed server and database using
-        typescript and SQL, to manage user data and donation information. The
-        databse utilized CRUD API's to communicate with the forntend.
-        <br />
-        <br />
-        See Github for more information and detailed documentation
+        See the attached link to for presentation download.
       </p>
     ),
     github: "https://github.com/ChangePlusPlusVandy/MotherToMother",
@@ -285,25 +283,22 @@ const projectArr: ProjectData[] = [
     img: folio,
     title: "Custom Portfolio Sites",
     img_des: folio_des,
-    subtitle: "Fullstack Application",
+    subtitle: "Dynamic Portfolio Pages",
     description: (
       <p>
-        The Mother to Mother web app is a project delieverable for the mother to
-        mother non-profit in Nashville, TN. It's function is to tracking
-        incoming and outgoing donations for mothers in need. Our team created
-        created a client-side frontend using React Typscript, PWA, and firebase,
-        incorporating real time synchronization and session management.
-        <br />
-        <br />
-        This project utilized a custom backed server and database using
-        typescript and SQL, to manage user data and donation information. The
-        databse utilized CRUD API's to communicate with the forntend.
+        I designed and developed two portfolio websites from scratch, utilizing
+        the React framework along with raw HTML/CSS. Each site features a custom
+        layout and interactive elements, tailored to effectively showcase
+        projects, experience, and achievements. They are fully responsive,
+        ensuring an optimal viewing experience across all screen sizes and
+        devices, and are self-hosted through Netlify for seamless performance
+        and deployment.
         <br />
         <br />
         See Github for more information and detailed documentation
       </p>
     ),
-    github: "https://github.com/ChangePlusPlusVandy/MotherToMother",
+    github: "https://github.com/josephjquinn/cv-portfolio",
   },
 ];
 
