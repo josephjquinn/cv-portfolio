@@ -63,8 +63,9 @@
   font-weight: 600;
 }
 
-.project .intro {
+.project .proj-intro {
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 

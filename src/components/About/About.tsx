@@ -3,6 +3,15 @@ import "./about.css";
 import Headshot from "../../assets/headshot.png";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+import Timeline from "@mui/lab/Timeline";
+import TimelineItem from "@mui/lab/TimelineItem";
+import TimelineSeparator from "@mui/lab/TimelineSeparator";
+import TimelineConnector from "@mui/lab/TimelineConnector";
+import TimelineContent from "@mui/lab/TimelineContent";
+import TimelineDot from "@mui/lab/TimelineDot";
+import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
+
 gsap.registerPlugin(ScrollTrigger);
 
 export const About: React.FC = () => {
@@ -51,18 +60,82 @@ export const About: React.FC = () => {
           vision, and natural language processing.
           <br />
           <br />
-          <h2>Vanderbilt University</h2>
-          <ul>
-            <li>
-              Bachelor of Science: School of Engineering
+          <div className="exp-container">
+            <div style={{ marginRight: "50px" }}>
+              <h2>Vanderbilt University</h2>
               <ul>
-                <li>Major: Computer Science & Math</li>
-                <li>Minor: Data Science</li>
+                <li>
+                  Bachelor of Science: School of Engineering
+                  <ul>
+                    <li>Major: Computer Science & Math</li>
+                    <li>Minor: Data Science</li>
+                  </ul>
+                </li>
               </ul>
-            </li>
-          </ul>
-          <br />
-          <br />
+              <br />
+              <br />
+            </div>
+            <div>
+              <Timeline position="alternate">
+                <TimelineItem>
+                  <TimelineOppositeContent color="text.secondary">
+                    January 2019 - March 2020
+                  </TimelineOppositeContent>
+                  <TimelineSeparator>
+                    <TimelineDot />
+                    <TimelineConnector />
+                  </TimelineSeparator>
+                  <TimelineContent>
+                    Lockheed Martin Enginerering Exploers Post
+                  </TimelineContent>
+                </TimelineItem>
+                <TimelineItem>
+                  <TimelineOppositeContent color="text.secondary">
+                    August 2023 - Present
+                  </TimelineOppositeContent>
+                  <TimelineSeparator>
+                    <TimelineDot />
+                    <TimelineConnector />
+                  </TimelineSeparator>
+                  <TimelineContent>
+                    Vanderbilt Change ++ Developer
+                  </TimelineContent>
+                </TimelineItem>
+                <TimelineItem>
+                  <TimelineOppositeContent color="text.secondary">
+                    May 2024 - August 2024
+                  </TimelineOppositeContent>
+                  <TimelineSeparator>
+                    <TimelineDot />
+                    <TimelineConnector />
+                  </TimelineSeparator>
+                  <TimelineContent>
+                    ORNL Machine Learning Intern
+                  </TimelineContent>
+                </TimelineItem>
+                {/* <TimelineItem>
+                  <TimelineOppositeContent color="text.secondary">
+                  May 2024 - August 2024
+                  </TimelineOppositeContent>
+                  <TimelineSeparator>
+                    <TimelineDot />
+                    <TimelineConnector />
+                  </TimelineSeparator>
+                  <TimelineContent>CS Teaching Assistant</TimelineContent>
+                </TimelineItem>
+                <TimelineItem>
+                  <TimelineOppositeContent color="text.secondary">
+                  May 2024 - August 2024
+                  </TimelineOppositeContent>
+                  <TimelineSeparator>
+                    <TimelineDot />
+                    <TimelineConnector />
+                  </TimelineSeparator>
+                  <TimelineContent>Vanderbilt Lab Intern</TimelineContent>
+                </TimelineItem> */}
+              </Timeline>
+            </div>
+          </div>
           You can see more about my projects and skills below.
         </p>
       </div>
