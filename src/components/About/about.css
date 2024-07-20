@@ -1,8 +1,26 @@
+/* General Styles */
 .about {
   position: relative;
   width: 100vw;
+  height: 100vh;
 }
+.timeline-date {
+  font-size: 0.8rem !important;
+  white-space: pre-wrap; 
+  word-break: break-word; 
+  hyphens: auto; 
+  overflow-wrap: break-word; 
 
+
+}
+.timeline-name   {
+  font-size: 1rem !important;
+  white-space: pre-wrap; 
+  word-break: break-word; 
+  hyphens: auto; 
+  overflow-wrap: break-word; 
+
+}
 .about .content {
   position: absolute;
   top: 42%;
@@ -23,6 +41,7 @@
 
 .about .content .paragraph {
   text-align: left;
+  margin-top: 100px;
 }
 
 .about .content .info {
@@ -34,80 +53,110 @@
   font-size: 1.5rem;
 }
 
-.timeline-opposite-content {
-  white-space: break=spaces; /* Prevent text from wrapping */
-  overflow: hidden;    /* Hide overflowed text */
+
+.about .content .exp-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.about .content .exp-container{
-   display: flex;
-   align-items:center;
-   justify-content: center;
-}
+/* Media Queries */
 
-/* Iphone */
-@media screen and (max-width: 350px) {
+/* Small Screens (Iphone) */
+@media screen and (max-width: 450px) {
   .about {
     height: 180vh;
   }
   .about .content {
-    width: 15rem;
-    font-size: 0.8rem;
+    width: 18rem;
+    font-size: 1rem;
     line-height: 180%;
     top: 30%;
   }
   .about .content .exp-container {
     display: block;
-    align-items: center;
-    justify-content: center;
-    }
+  }
+  .timeline-date {
+    font-size: 1rem !important;
+  }
+
+  .timeline-name {
+    font-size:1rem !important;
+  }
+  .exp-container{
+    margin-bottom: 90px;
+  }
 }
 
-/* Iphone */
-@media screen and (min-width: 351px) and (max-width: 599px) {
+/* Medium Screens (Iphone) */
+@media screen and (min-width: 451px) and (max-width: 599px) {
   .about {
     height: 140vh;
   }
   .about .content {
-    width: 18rem;
-    font-size: 0.8rem;
+    width: 25rem;
+    font-size: 1rem;
     line-height: 180%;
     top: 30%;
   }
   .about .content .exp-container {
     display: block;
-    align-items: center;
-    justify-content: center;
-    }
+  }
+  .timeline-date {
+    font-size: 1rem !important;
+  }
+
+  .timeline-name {
+    font-size: 1.2rem !important;
+  }
+  .exp-container{
+    margin-bottom: 90px;
+  }
 }
 
-/* Ipad and small tablet */
+/* Tablets and Small Screens (Ipad and small tablet) */
 @media screen and (min-width: 600px) and (max-width: 1023px) {
   .about {
     height: 120vh;
   }
   .about .content {
-    width: 30rem;
-    font-size: 0.8rem;
+    width: 35rem;
+    font-size:1rem;
     line-height: 180%;
   }
   .about .content .exp-container {
     display: block;
-    align-items: center;
-    justify-content: center;
-    }
+  }
+  .timeline-date {
+    font-size: 1rem !important;
+  }
 
+  .timeline-name {
+    font-size: 1.2rem !important;
+  }
+  .exp-container{
+    margin-bottom: 90px;
+  }
 }
 
-/* Ipad pro */
+/* Larger Tablets and Small Desktops (Ipad pro) */
 @media screen and (min-width: 1023px) and (max-width: 1919px) {
   .about {
     height: 100vh;
   }
   .about .content {
-    width: 65rem;
-    font-size: 0.9rem;
+    width: 60rem;
+    font-size: 1rem;
     line-height: 200%;
+
+  }
+  
+  .timeline-date {
+    font-size: 0.8rem !important;
+  }
+
+  .timeline-name {
+    font-size: 1rem !important;
   }
 }
 
@@ -117,8 +166,16 @@
     height: 100vh;
   }
   .about .content {
-    /* width: 70rem; */
-    font-size: 0.9rem;
+    font-size: 1.4rem;
     line-height: 200%;
+    width: 80rem;
+  }
+
+  .timeline-date {
+    font-size: 1rem !important;
+  }
+
+  .timeline-name {
+    font-size: 1.2rem !important;
   }
 }

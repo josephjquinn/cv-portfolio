@@ -3,7 +3,6 @@ import "./about.css";
 import Headshot from "../../assets/headshot.png";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-
 import Timeline from "@mui/lab/Timeline";
 import TimelineItem from "@mui/lab/TimelineItem";
 import TimelineSeparator from "@mui/lab/TimelineSeparator";
@@ -15,20 +14,15 @@ import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
 gsap.registerPlugin(ScrollTrigger);
 
 export const About: React.FC = () => {
-  const imgRef = useRef(null);
-  const paraRef = useRef(null);
-  const infoRef = useRef(null);
-
-  const AnimateObject = [imgRef, paraRef, infoRef];
+  const imgRef = useRef<HTMLImageElement>(null);
+  const paraRef = useRef<HTMLParagraphElement>(null);
+  const infoRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const gsapAnimation = (ref: any) => {
+    const gsapAnimation = (ref: React.RefObject<HTMLElement>) => {
       gsap.fromTo(
         ref.current,
-        {
-          y: "10rem",
-          opacity: 0.5,
-        },
+        { y: "10rem", opacity: 0.5 },
         {
           y: "0rem",
           opacity: 1,
@@ -36,8 +30,8 @@ export const About: React.FC = () => {
           scrollTrigger: {
             trigger: ref.current,
             toggleActions: "restart none restart none",
-            start: `-600px center`,
-            end: `top center`,
+            start: "-600px center",
+            end: "top center",
             scrub: 2,
             markers: false,
           },
@@ -45,17 +39,15 @@ export const About: React.FC = () => {
       );
     };
 
-    AnimateObject.map((item) => {
-      gsapAnimation(item);
-    });
+    [imgRef, paraRef, infoRef].forEach(gsapAnimation);
   }, []);
 
   return (
     <div className="about">
       <div className="content">
-        <img src={Headshot} ref={imgRef} alt={"headshot"}></img>
+        <img src={Headshot} ref={imgRef} alt="Headshot" />
         <p className="paragraph" ref={paraRef}>
-          I'm a computer science student at Vanderbilt University, My interests
+          I'm a computer science student at Vanderbilt University. My interests
           include software design and development, machine learning, computer
           vision, and natural language processing.
           <br />
@@ -78,61 +70,42 @@ export const About: React.FC = () => {
             <div>
               <Timeline position="alternate">
                 <TimelineItem>
-                  <TimelineOppositeContent color="text.secondary">
+                  <TimelineOppositeContent className="timeline-date" color="text.secondary">
                     January 2019 - March 2020
                   </TimelineOppositeContent>
                   <TimelineSeparator>
-                    <TimelineDot />
-                    <TimelineConnector />
+                  <TimelineDot variant="outlined" />
+                  <TimelineConnector />
                   </TimelineSeparator>
-                  <TimelineContent>
-                    Lockheed Martin Enginerering Exploers Post
+                  <TimelineContent  className="timeline-name">
+                    Lockheed Martin Engineering Explorers Post
                   </TimelineContent>
                 </TimelineItem>
                 <TimelineItem>
-                  <TimelineOppositeContent color="text.secondary">
+                  <TimelineOppositeContent className="timeline-date" color="text.secondary">
                     August 2023 - Present
                   </TimelineOppositeContent>
                   <TimelineSeparator>
-                    <TimelineDot />
-                    <TimelineConnector />
+                  <TimelineDot variant="outlined" />
+                  <TimelineConnector />
                   </TimelineSeparator>
-                  <TimelineContent>
-                    Vanderbilt Change ++ Developer
+                  <TimelineContent className="timeline-name">
+                    Vanderbilt Change++ Developer
                   </TimelineContent>
                 </TimelineItem>
                 <TimelineItem>
-                  <TimelineOppositeContent color="text.secondary">
+                  <TimelineOppositeContent className="timeline-date" color="text.secondary">
                     May 2024 - August 2024
                   </TimelineOppositeContent>
                   <TimelineSeparator>
-                    <TimelineDot />
-                    <TimelineConnector />
-                  </TimelineSeparator>
-                  <TimelineContent>
+                  <TimelineDot variant="outlined" />
+                  <TimelineConnector />
+                  </TimelineSeparator >
+                  <TimelineContent className="timeline-name">
                     ORNL Machine Learning Intern
                   </TimelineContent>
                 </TimelineItem>
-                {/* <TimelineItem>
-                  <TimelineOppositeContent color="text.secondary">
-                  May 2024 - August 2024
-                  </TimelineOppositeContent>
-                  <TimelineSeparator>
-                    <TimelineDot />
-                    <TimelineConnector />
-                  </TimelineSeparator>
-                  <TimelineContent>CS Teaching Assistant</TimelineContent>
-                </TimelineItem>
-                <TimelineItem>
-                  <TimelineOppositeContent color="text.secondary">
-                  May 2024 - August 2024
-                  </TimelineOppositeContent>
-                  <TimelineSeparator>
-                    <TimelineDot />
-                    <TimelineConnector />
-                  </TimelineSeparator>
-                  <TimelineContent>Vanderbilt Lab Intern</TimelineContent>
-                </TimelineItem> */}
+                {/* Additional Timeline Items can be added here */}
               </Timeline>
             </div>
           </div>
@@ -142,3 +115,4 @@ export const About: React.FC = () => {
     </div>
   );
 };
+
