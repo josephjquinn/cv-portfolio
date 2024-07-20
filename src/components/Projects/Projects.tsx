@@ -349,7 +349,6 @@ export const Projects: React.FC = () => {
         <div className="text">
           <h1 ref={textH1Ref}>MY PROJECTS</h1>
           <p ref={infoRef}>
-            <span>Hi,</span>
             <br />
             My projects range from webdev to machine learning. You can click any
             project for more details
