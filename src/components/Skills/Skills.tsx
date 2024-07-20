@@ -3,25 +3,20 @@ import "./skills.css";
 
 import { FaAws } from "react-icons/fa";
 import {
-  SiAmazonaws,
   SiDocker,
-  SiExpress,
   SiFlask,
   SiGit,
   SiJunit5,
   SiMongodb,
-  SiMysql,
   SiNumpy,
   SiPandas,
   SiPrisma,
   SiPytorch,
   SiR,
   SiReact,
-  SiTypescript,
 } from "react-icons/si";
 
 import {
-  DiCss3,
   DiFirebase,
   DiHtml5,
   DiJava,
