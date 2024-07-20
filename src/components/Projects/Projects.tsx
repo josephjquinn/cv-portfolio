@@ -18,7 +18,7 @@ import nvim_des from "../../assets/projects/nvim-info.png";
 import av from "../../assets/projects/av.png";
 import av_des from "../../assets/projects/av-info.png";
 import DOE from "../../assets/projects/DOE.png";
-import DOE_des from "../../assets/projects/DOE-info.png";
+import DOE_des from "../../assets/projects/dallasinno.png";
 import nn from "../../assets/projects/nn.png";
 import nn_des from "../../assets/projects/nn-info.png";
 import folio from "../../assets/projects/portfolio.png";
@@ -47,70 +47,65 @@ const projectArr: ProjectData[] = [
     title: "Wordwise",
     img_des: wordwise_des,
     subtitle: "Wordle Solving Algorithm",
+    github: "https://github.com/josephjquinn/word-wise",
+    stack: "Python, Selenium, Matplotlib ",
+
     description: (
       <p>
         This project is a Python implementation of a Wordle solver using the
         Selenium web automation framework. Wordle is a word puzzle game where
         the player tries to guess a five-letter word within a limited number of
-        attempts.
+        attempts. This project is a Python-based implementation aimed at solving
+        the Wordle game efficiently using the Selenium web automation framework.
+        The repo offers a suite of tools for simulating, analyzing, and
+        optimizing gameplay strategies.
         <br />
         <br />
-        Through a process of elimination and statistical analysis of letter
-        frequencies, the algorithm refines the pool of potential words and
-        selects the optimal guess based on calculated word scores, increasing
-        the likelihood of correctly guessing the target word within the allotted
-        attempts.
-        <br />
-        <br />
-        Through pie charts, bar plots, histograms, box plots, scatter plots, and
-        more, users can explore various aspects of Wordle gameplay, such as
-        solve percentages, distribution of guesses, time per game, letter
-        frequency in solution words, and even the impact of different starting
-        words on solving efficiency.
+        I created an algorithm that systematically narrows down potential words,
+        achieving a high solve percentage of 98.6% with an average of 3.753
+        guesses per game across 1000 simulations. Data analysis classes are
+        included to visualize game data, providing insights into solve rates,
+        guess distribution, and word frequency analysis.
         <br />
         <br />
         See Github for more information and detailed documentation
       </p>
     ),
-    github: "https://github.com/josephjquinn/word-wise",
   },
   {
     img: snakedql,
     title: "Snake Deep Learning",
     img_des: snakedql_des,
     subtitle: "DQL Model",
+    github: "https://github.com/josephjquinn/snake-dql",
+    stack: "Python, PyTorch, NumPy",
     description: (
       <p>
-        This repository contains a Python implementation of a Deep Q-Learning
-        model that plays a basic Snake arcade game.
-        <br />
-        <br />
-        Deep Q-Learning is a popular reinforcement learning algorithm that
-        allows an agent to learn optimal strategies to maximize its cumulative
-        reward in a given environment.
+        This repository contains a Python implementation of a reinforcement
+        learning model that plays a basic Snake arcade game.
         <br />
         <br />
         This system relies on a reward system in order to train the model, every
         action the snake takes has the potential for a change in the reward
         score, the snake wants to increase its reward at all times and the model
-        trains itself to be the most effect at this task.
-        This system relies on a reward system in order to train the model, every
-        action the snake takes has the potential for a change in the reward
-        score, the snake wants to increase its reward at all times and the model
-        trains itself to be the most effect at this task.
+        trains itself to be the most effect at this task. It includes a
+        Python-based architecture with classes for the game logic, the learning
+        agent, and the neural network model. The project allows training the
+        agent to optimize its gameplay through a reward system, and provides
+        scripts for both user-controlled and automated game sessions.
         <br />
         <br />
         See Github for more information and detailed documentation
       </p>
     ),
-    github: "https://github.com/josephjquinn/Snake-Deep-Learning",
-    stack: "Python, PyTorch, NumPy",
   },
   {
     img: huffman,
     title: "Huffman Encoding",
     img_des: huffman_des,
     subtitle: "Compression Algorithm",
+    github: "https://github.com/josephjquinn/Huffman-Encoding-Algorithm",
+    stack: "Java",
     description: (
       <p>
         This Java program implements the Huffman encoding algorithm for lossless
@@ -119,24 +114,22 @@ const projectArr: ProjectData[] = [
         <br />
         It analyzes the frequency of characters in a user-input string,
         constructs a Huffman tree prioritizing characters by frequency, and
-        assigns variable-length codes to each character.
-        <br />
-        <br />
-        The program outputs the binary representation of the encoded string and
-        logs the Huffman codes for each character to a text file, facilitating
-        efficient data storage and transmission.
+        assigns variable-length codes to each character. The program outputs the
+        binary representation of the encoded string and logs the Huffman codes
+        for each character to a text file, facilitating efficient data storage
+        and transmission.
         <br />
         <br />
         See Github for more information and detailed documentation
       </p>
     ),
-    github: "https://github.com/josephjquinn/Huffman-Encoding-Algorithm",
   },
   {
     img: asl,
     title: "ASL Model",
     img_des: asl_des,
     subtitle: "Hand Gesture Computer Vision",
+    github: "https://github.com/josephjquinn/asl-model",
     description: (
       <p>
         The Hand Gesture Recognition project combines computer vision and
@@ -161,54 +154,60 @@ const projectArr: ProjectData[] = [
         See Github for more information and detailed documentation
       </p>
     ),
-    github: "https://github.com/josephjquinn/asl-model",
   },
   {
     img: mtm,
     title: "Mother To Mother Web App",
     img_des: mtm_des,
     subtitle: "Fullstack Application",
+    github: "https://github.com/ChangePlusPlusVandy/MotherToMother",
+    stack: "Typescript, React, MYSQL, Prisma, FFirebase, AWS:RDS/EC2, ",
     description: (
       <p>
         The Mother to Mother web app is a project delieverable for the mother to
         mother non-profit in Nashville, TN. It's function is to tracking
-        incoming and outgoing donations for mothers in need. Our team created
-        created a client-side frontend using React Typscript, PWA, and firebase,
-        incorporating real time synchronization and session management.
+        incoming and outgoing donations for mothers in need.
         <br />
         <br />
-        This project utilized a custom backed server and database using
-        typescript and SQL, to manage user data and donation information. The
-        databse utilized CRUD API's to communicate with the forntend.
+        Our team created created a client-side frontend using React Typscript,
+        PWA, and firebase, incorporating real time synchronization and session
+        management.
         <br />
+        This project utilized a custom backed server and database using MYSQL
+        and Prisma, in order manage user data and donation information.
+        <br />
+        Additionally, we developed an admin dashboard to manage users and view
+        overall metrics, enhancing the system's efficiency and transparency.
+        <br />
+        The application was deolpyed using AWS EC2 and RDS.
         <br />
         See Github for more information and detailed documentation
       </p>
     ),
-    github: "https://github.com/ChangePlusPlusVandy/MotherToMother",
   },
   {
     img: nvim,
     title: "Nvim Config",
     img_des: nvim_des,
     subtitle: "Nvim Configuration",
+    github: "https://github.com/josephjquinn/nvim",
+    stack: "lua, vimscript",
     description: (
       <p>
         This Neovim configuration is customized for enhanced productivity and a
         seamless coding experience like that youd find in IDE's such as Visual
         Studio Code. Allowing for full custimization from user to user and
-        running completely in terminal.
+        operating completely wihtin yourF terminal.
         <br />
         <br />
         It includes features like plugin management, LSP server integration,
         Tmux support, custom keybindings, syntax highlighting, autocompletion,
-        themes, and file navigation.
+        color themes, and file navigation trees.
         <br />
         <br />
         See Github for more information and detailed documentation
       </p>
     ),
-    github: "https://github.com/josephjquinn/nvim",
   },
   {
     img: av,

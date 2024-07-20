@@ -65,7 +65,9 @@ export default function Project({
           </>
         )}
       </div>
+
       <p className="title">{title.toUpperCase()}</p>
+
       {isClick && (
         <div className="detail">
           <div className="mate" onClick={() => setIsClick(false)}></div>
@@ -79,7 +81,7 @@ export default function Project({
               exit={{ opacity: 0, y: 200 }}
               transition={{ duration: 0.6, ease: easeInOut }}
             />
-            <div className={"intro"}>
+            <div className={"proj-intro"}>
               <m.h2
                 style={{
                   marginRight: "10px",
@@ -113,35 +115,37 @@ export default function Project({
                     </div>
                   </a>
                 )}
-
-              
-      
               </m.div>
-           
-              </div>
+            </div>
 
-              {stack && 
-              (
-
-
+            {stack && (
               <m.div
                 initial={{ opacity: 0, y: 200 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: 200 }}
                 transition={{ delay: 0.2, duration: 0.6, ease: easeInOut }}
               >
-                <div style={{display: "flex", justifyContent: "center", alignItems: "center", marginBottom: "0px"}}>
-                  <h2 style={{fontWeight: "1000", marginRight: "10px"}}>
-                    Tech Stack:  
+                <div
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    marginBottom: "0px",
+                  }}
+                >
+                  <h2
+                    style={{
+                      fontWeight: "bold",
+                      marginRight: "10px",
+                      whiteSpace: "nowrap",
+                    }}
+                  >
+                    Tech Stack:
                   </h2>
-                  <h2>
-                    {stack}
-                  </h2>
-               </div>
-
-
+                  <h2 style={{ flexWrap: "wrap" }}>{stack}</h2>
+                </div>
               </m.div>
-                      )}
+            )}
 
             <m.div
               className="content"
