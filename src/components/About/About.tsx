@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import "./about.css";
-import Headshot from "../../assets/headshot.png";
+import Headshot from "/headshot.png";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Timeline from "@mui/lab/Timeline";

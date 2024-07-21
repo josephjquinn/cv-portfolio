@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Navbar.css";
 import Link from "react-scroll/modules/components/Link";
 import { FaBars, FaTimes } from "react-icons/fa";
-import resumePDF from "../../assets/JosephQuinnResume.pdf";
+import resumePDF from "/JosephQuinnResume.pdf";
 
 export const Navbar: React.FC = () => {
   const [isShowNav, setIsShowNav] = useState(false);
