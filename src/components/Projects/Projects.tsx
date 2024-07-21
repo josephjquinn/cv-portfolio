@@ -25,9 +25,15 @@ import folio from "/projects/portfolio.png";
 import folio_des from "/projects/port2.png";
 
 import logo from "/logo.png";
+import doePoster from "/omni.pdf";
+
 
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+const openPDF = () => {
+  window.open(doePoster, "_blank");
+};
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -266,18 +272,28 @@ const projectArr: ProjectData[] = [
     subtitle: "Optimizing Vision Transformers for Fluid Dynamics",
     description: (
       <p>
-        At the 2024 DOE Innovation Conference, I presented research on
-        optimizing Axial Vision Transformers for computational fluid dynamics.
-        The study focused on hyperparameter sensitivity, demonstrating the
-        relationship between improvements in accuracy and increases in training
-        time. This research highlighted advancements in model efficiency and
-        accuracy for fluid dynamics simulations.
-        <br />
-        <br />
-        See the attached link to for presentation download.
-      </p>
+      This is a research poster detailing work on a computational fluid dynamics project.
+      <br />
+      <br />
+      The poster provides insights into the research findings, methodologies, and
+      applications of the study, showcasing the results and impact of the project.
+      <br />
+      <br />
+      <a
+          href={doePoster}
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            color: 'inherit', /* Match text color with surrounding text */
+            textDecoration: 'none', /* Remove underline */
+            fontWeight: 'bold', /* Match font weight with surrounding text */
+          }}
+        >
+          Click here to view presentation
+        </a>
+    </p>
     ),
-    github: "https://github.com/ChangePlusPlusVandy/MotherToMother",
+    github: "",
   },
   {
     img: folio,
