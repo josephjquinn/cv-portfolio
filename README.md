@@ -7,4 +7,4 @@ I designed and developed this portfolio websites from scratch using the React fr
   <img width=600, src="./public/webDemo2.png">
 </div>
 
-The websites are self-hosted through Netlify. You can view the live versions here: [Portfolio Website](https://josephquinn.dev)
+The website is self-hosted through Netlify. You can view the live version here: [Portfolio Website](https://josephquinn.dev)
