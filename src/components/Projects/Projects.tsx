@@ -30,10 +30,6 @@ import doePoster from "/omni.pdf";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-const openPDF = () => {
-  window.open(doePoster, "_blank");
-};
-
 gsap.registerPlugin(ScrollTrigger);
 
 interface ProjectData {
