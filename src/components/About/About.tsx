@@ -49,7 +49,7 @@ export const About: React.FC = () => {
         <p className="paragraph" ref={paraRef}>
           I'm a computer science student at Vanderbilt University. My interests
           include software design and development, machine learning, computer
-          vision, and natural language processing.
+          vision, and neural network architecture.
           <br />
           <br />
           <div className="exp-container">

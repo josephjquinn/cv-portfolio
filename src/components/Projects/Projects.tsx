@@ -27,7 +27,6 @@ import folio_des from "/projects/port2.png";
 import logo from "/logo.png";
 import doePoster from "/omni.pdf";
 
-
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -135,7 +134,8 @@ const projectArr: ProjectData[] = [
     title: "ASL Model",
     img_des: asl_des,
     subtitle: "Hand Gesture Computer Vision",
-    github: "https://github.com/josephjquinn/asl-model",
+    github: "https://github.com/josephjquinn/gesture-model",
+    stack: "Python, PyTorch, numPy, OpenCV, Matplotlib, Pandas, Mediapipe",
     description: (
       <p>
         The Hand Gesture Recognition project combines computer vision and
@@ -167,21 +167,21 @@ const projectArr: ProjectData[] = [
     img_des: mtm_des,
     subtitle: "Fullstack Application",
     github: "https://github.com/mtmvuse/MotherToMother",
-    stack: "Typescript, React, MYSQL, Prisma, FFirebase, AWS:RDS/EC2",
+    stack: "Typescript, React, MYSQL, Prisma, Firebase, AWS:RDS/EC2",
     description: (
       <p>
-        The Mother to Mother web app is a project delieverable for the mother to
+        The Mother to Mother web app is a project deliverable for the mother to
         mother non-profit in Nashville, TN. It's function is to tracking
         incoming and outgoing donations for mothers in need.
         <br />
         <br />
-        Our team created created a client-side frontend using React Typscript,
+        Our team created created a client-side frontend using React Typescript,
         PWA, and firebase, incorporating real time synchronization and session
         management. This project utilized a custom backed server and database
         using MYSQL and Prisma, in order manage user data and donation
         information. Additionally, we developed an admin dashboard to manage
         users and view overall metrics, enhancing the system's efficiency and
-        transparency. The application was deolpyed using AWS EC2 and RDS.
+        transparency. The application was deployed using AWS EC2 and RDS.
         <br />
         <br />
         See Github for more information and detailed documentation
@@ -190,17 +190,17 @@ const projectArr: ProjectData[] = [
   },
   {
     img: nvim,
-    title: "Nvim Config",
+    title: "Neovim Config",
     img_des: nvim_des,
-    subtitle: "Nvim Configuration",
+    subtitle: "From Scratch Nvim Configuration",
     github: "https://github.com/josephjquinn/nvim",
-    stack: "lua, vimscript",
+    stack: "Lua, Vimscript",
     description: (
       <p>
         This Neovim configuration is customized for enhanced productivity and a
-        seamless coding experience like that youd find in IDE's such as Visual
-        Studio Code. Allowing for full custimization from user to user and
-        operating completely wihtin yourF terminal.
+        seamless coding experience like that you'd find in IDE's such as Visual
+        Studio Code. Allowing for full customization from user to user and
+        operating completely within your terminal.
         <br />
         <br />
         It includes features like plugin management, LSP server integration,
@@ -217,30 +217,29 @@ const projectArr: ProjectData[] = [
     title: "Avit Visualization",
     img_des: av_des,
     subtitle: "Fullstack Application",
+    github: "https://github.com/josephjquinn/avit-vis",
+    stack: "Typescript, React, Flask, ReCharts",
+
     description: (
       <p>
-        The Mother to Mother web app is a project delieverable for the mother to
-        mother non-profit in Nashville, TN. It's function is to tracking
-        incoming and outgoing donations for mothers in need. Our team created
-        created a client-side frontend using React Typscript, PWA, and firebase,
-        incorporating real time synchronization and session management.
-        <br />
-        <br />
-        This project utilized a custom backed server and database using
-        typescript and SQL, to manage user data and donation information. The
-        databse utilized CRUD API's to communicate with the forntend.
+        For this project, I developed a web application to
+        display dynamic visualizations of performance metrics for various test
+        cases of an AViT model, specifically applied to fluid dynamics
+        simulations. Additionally, I integrated support for NetCDF files,
+        enabling the visualization of complex fluid dynamics data.
         <br />
         <br />
         See Github for more information and detailed documentation
       </p>
     ),
-    github: "https://github.com/josephjquinn/avit-vis",
   },
   {
     img: nn,
     title: "nnScratch",
     img_des: nn_des,
     subtitle: "Fullstack Application",
+    github: "https://github.com/josephjquinn/nnScratch",
+    stack: "Python, numPy",
     description: (
       <p>
         This project implements a feedforward neural network class entirely from
@@ -263,43 +262,44 @@ const projectArr: ProjectData[] = [
         See Github for more information and detailed documentation
       </p>
     ),
-    github: "https://github.com/josephjquinn/nnScratch",
   },
   {
     img: DOE,
     title: "DOE Presentation",
     img_des: DOE_des,
     subtitle: "Optimizing Vision Transformers for Fluid Dynamics",
+    stack: "Public Speaking :3",
+
     description: (
       <p>
-      This is a research poster detailing work on a computational fluid dynamics project.
-      <br />
-      <br />
-      The poster provides insights into the research findings, methodologies, and
-      applications of the study, showcasing the results and impact of the project.
-      <br />
-      <br />
-      <a
+        This is a research poster presented at the 2024 Departments of Energy
+        Cybersecurity and Technology conference. It provides insights into the
+        research findings, methodologies, and applications of the study,
+        showcasing the results and impact of my research.
+        <br />
+        <br />
+        <a
           href={doePoster}
           target="_blank"
           rel="noopener noreferrer"
           style={{
-            color: 'inherit', /* Match text color with surrounding text */
-            textDecoration: 'none', /* Remove underline */
-            fontWeight: 'bold', /* Match font weight with surrounding text */
+            color: "inherit" /* Match text color with surrounding text */,
+            textDecoration: "none" /* Remove underline */,
+            fontWeight: "bold" /* Match font weight with surrounding text */,
           }}
         >
           Click here to view presentation
         </a>
-    </p>
+      </p>
     ),
-    github: "",
   },
   {
     img: folio,
     title: "Custom Portfolio Sites",
     img_des: folio_des,
     subtitle: "Dynamic Portfolio Pages",
+    github: "https://github.com/josephjquinn/cv-portfolio",
+    stack: "Typescript, React",
     description: (
       <p>
         I designed and developed two portfolio websites from scratch, utilizing
@@ -314,7 +314,6 @@ const projectArr: ProjectData[] = [
         See Github for more information and detailed documentation
       </p>
     ),
-    github: "https://github.com/josephjquinn/cv-portfolio",
   },
 ];
 

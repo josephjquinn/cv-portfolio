@@ -104,6 +104,8 @@ export default function Project({
                   <a
                     className="github-link"
                     href={github}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     style={{ display: "flex", justifyContent: "center" }}
                   >
                     <BsGithub
