@@ -159,7 +159,7 @@ const projectArr: ProjectData[] = [
   },
   {
     img: mtm,
-    title: "Mother To Mother Web App",
+    title: "Mother To Mother App",
     img_des: mtm_des,
     subtitle: "Fullstack Application",
     github: "https://github.com/mtmvuse/MotherToMother",
