@@ -218,11 +218,11 @@ const projectArr: ProjectData[] = [
 
     description: (
       <p>
-        For this project, I developed a web application to
-        display dynamic visualizations of performance metrics for various test
-        cases of an AViT model, specifically applied to fluid dynamics
-        simulations. Additionally, I integrated support for NetCDF files,
-        enabling the visualization of complex fluid dynamics data.
+        For this project, I developed a web application to display dynamic
+        visualizations of performance metrics for various test cases of an AViT
+        model, specifically applied to fluid dynamics simulations. Additionally,
+        I integrated support for NetCDF files, enabling the visualization of
+        complex fluid dynamics data.
         <br />
         <br />
         See Github for more information and detailed documentation
@@ -261,7 +261,7 @@ const projectArr: ProjectData[] = [
   },
   {
     img: DOE,
-    title: "DOE Presentation",
+    title: "Research Publication",
     img_des: DOE_des,
     subtitle: "Optimizing Vision Transformers for Fluid Dynamics",
     stack: "Public Speaking :3",
@@ -321,7 +321,7 @@ export const Projects: React.FC = () => {
 
   const gsapAnimation = (
     ref: React.MutableRefObject<HTMLElement | null>,
-    deg: number
+    deg: number,
   ) => {
     gsap.fromTo(
       ref.current,
@@ -343,7 +343,7 @@ export const Projects: React.FC = () => {
           scrub: 2,
           markers: false,
         },
-      }
+      },
     );
   };
 
