@@ -159,7 +159,7 @@ const projectArr: ProjectData[] = [
   },
   {
     img: mtm,
-    title: "Mother To Mother App",
+    title: "Mother To Mother PWA",
     img_des: mtm_des,
     subtitle: "Fullstack Application",
     github: "https://github.com/mtmvuse/MotherToMother",
@@ -261,7 +261,7 @@ const projectArr: ProjectData[] = [
   },
   {
     img: DOE,
-    title: "DOE Presentation",
+    title: "ORNL Research",
     img_des: DOE_des,
     subtitle: "Optimizing Vision Transformers for Fluid Dynamics",
     stack: "Public Speaking :3",
