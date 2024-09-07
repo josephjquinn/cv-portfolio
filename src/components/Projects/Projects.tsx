@@ -236,7 +236,27 @@ const projectArr: ProjectData[] = [
       </p>
     ),
   },
+  {
+    img: av,
+    title: "Avit Visualization",
+    img_des: av_des,
+    subtitle: "Fullstack Application",
+    github: "https://github.com/josephjquinn/avit-vis",
+    stack: "Typescript, React, Flask, ReCharts",
 
+    description: (
+      <p>
+        For this project, I developed a web application to display dynamic
+        visualizations of performance metrics for various test cases of an AViT
+        model, specifically applied to fluid dynamics simulations. Additionally,
+        I integrated support for NetCDF files, enabling the visualization of
+        complex fluid dynamics data.
+        <br />
+        <br />
+        See Github for more information and detailed documentation
+      </p>
+    ),
+  },
   {
     img: nn,
     title: "nnScratch",
@@ -267,7 +287,36 @@ const projectArr: ProjectData[] = [
       </p>
     ),
   },
-  
+  {
+    img: DOE,
+    title: "Research Publication",
+    img_des: DOE_des,
+    subtitle: "Optimizing Vision Transformers for Fluid Dynamics",
+    stack: "Public Speaking :3",
+
+    description: (
+      <p>
+        This is a research poster presented at the 2024 Departments of Energy
+        Cybersecurity and Technology conference. It provides insights into the
+        research findings, methodologies, and applications of the study,
+        showcasing the results and impact of my research.
+        <br />
+        <br />
+        <a
+          href={doePoster}
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            color: "inherit" /* Match text color with surrounding text */,
+            textDecoration: "none" /* Remove underline */,
+            fontWeight: "bold" /* Match font weight with surrounding text */,
+          }}
+        >
+          Click here to view presentation
+        </a>
+      </p>
+    ),
+  },
   {
     img: folio,
     title: "Custom Portfolio Sites",
@@ -325,7 +374,7 @@ export const Projects: React.FC = () => {
 
   const gsapAnimation = (
     ref: React.MutableRefObject<HTMLElement | null>,
-    deg: number
+    deg: number,
   ) => {
     gsap.fromTo(
       ref.current,
@@ -347,7 +396,7 @@ export const Projects: React.FC = () => {
           scrub: 2,
           markers: false,
         },
-      }
+      },
     );
   };
 
