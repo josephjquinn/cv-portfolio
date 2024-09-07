@@ -74,6 +74,36 @@ const projectArr: ProjectData[] = [
     ),
   },
   {
+    img: DOE,
+    title: "ORNL Research",
+    img_des: DOE_des,
+    subtitle: "Optimizing Vision Transformers for Fluid Dynamics",
+    stack: "Public Speaking :3",
+
+    description: (
+      <p>
+        This is a research poster presented at the 2024 Departments of Energy
+        Cybersecurity and Technology conference. It provides insights into the
+        research findings, methodologies, and applications of the study,
+        showcasing the results and impact of my research.
+        <br />
+        <br />
+        <a
+          href={doePoster}
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            color: "inherit" /* Match text color with surrounding text */,
+            textDecoration: "none" /* Remove underline */,
+            fontWeight: "bold" /* Match font weight with surrounding text */,
+          }}
+        >
+          Click here to view presentation
+        </a>
+      </p>
+    ),
+  },
+  {
     img: snakedql,
     title: "Snake Deep Learning",
     img_des: snakedql_des,
@@ -101,24 +131,48 @@ const projectArr: ProjectData[] = [
     ),
   },
   {
-    img: huffman,
-    title: "Huffman Encoding",
-    img_des: huffman_des,
-    subtitle: "Compression Algorithm",
-    github: "https://github.com/josephjquinn/Huffman-Encoding-Algorithm",
-    stack: "Java",
+    img: mtm,
+    title: "Mother To Mother PWA",
+    img_des: mtm_des,
+    subtitle: "Fullstack Application",
+    github: "https://github.com/mtmvuse/MotherToMother",
+    stack: "Typescript, React, MYSQL, Prisma, Firebase, AWS:RDS/EC2",
     description: (
       <p>
-        This Java program implements the Huffman encoding algorithm for lossless
-        data compression.
+        The Mother to Mother web app is a project deliverable for the mother to
+        mother non-profit in Nashville, TN. It's function is to tracking
+        incoming and outgoing donations for mothers in need.
         <br />
         <br />
-        It analyzes the frequency of characters in a user-input string,
-        constructs a Huffman tree prioritizing characters by frequency, and
-        assigns variable-length codes to each character. The program outputs the
-        binary representation of the encoded string and logs the Huffman codes
-        for each character to a text file, facilitating efficient data storage
-        and transmission.
+        Our team created created a client-side frontend using React Typescript,
+        PWA, and firebase, incorporating real time synchronization and session
+        management. This project utilized a custom backed server and database
+        using MYSQL and Prisma, in order manage user data and donation
+        information. Additionally, we developed an admin dashboard to manage
+        users and view overall metrics, enhancing the system's efficiency and
+        transparency. The application was deployed using AWS EC2 and RDS.
+        <br />
+        <br />
+        See Github for more information and detailed documentation
+      </p>
+    ),
+  },
+ 
+  {
+    img: av,
+    title: "Avit Visualization",
+    img_des: av_des,
+    subtitle: "Fullstack Application",
+    github: "https://github.com/josephjquinn/avit-vis",
+    stack: "Typescript, React, Flask, ReCharts",
+
+    description: (
+      <p>
+        For this project, I developed a web application to
+        display dynamic visualizations of performance metrics for various test
+        cases of an AViT model, specifically applied to fluid dynamics
+        simulations. Additionally, I integrated support for NetCDF files,
+        enabling the visualization of complex fluid dynamics data.
         <br />
         <br />
         See Github for more information and detailed documentation
@@ -157,33 +211,7 @@ const projectArr: ProjectData[] = [
       </p>
     ),
   },
-  {
-    img: mtm,
-    title: "Mother To Mother PWA",
-    img_des: mtm_des,
-    subtitle: "Fullstack Application",
-    github: "https://github.com/mtmvuse/MotherToMother",
-    stack: "Typescript, React, MYSQL, Prisma, Firebase, AWS:RDS/EC2",
-    description: (
-      <p>
-        The Mother to Mother web app is a project deliverable for the mother to
-        mother non-profit in Nashville, TN. It's function is to tracking
-        incoming and outgoing donations for mothers in need.
-        <br />
-        <br />
-        Our team created created a client-side frontend using React Typescript,
-        PWA, and firebase, incorporating real time synchronization and session
-        management. This project utilized a custom backed server and database
-        using MYSQL and Prisma, in order manage user data and donation
-        information. Additionally, we developed an admin dashboard to manage
-        users and view overall metrics, enhancing the system's efficiency and
-        transparency. The application was deployed using AWS EC2 and RDS.
-        <br />
-        <br />
-        See Github for more information and detailed documentation
-      </p>
-    ),
-  },
+
   {
     img: nvim,
     title: "Neovim Config",
@@ -208,27 +236,7 @@ const projectArr: ProjectData[] = [
       </p>
     ),
   },
-  {
-    img: av,
-    title: "Avit Visualization",
-    img_des: av_des,
-    subtitle: "Fullstack Application",
-    github: "https://github.com/josephjquinn/avit-vis",
-    stack: "Typescript, React, Flask, ReCharts",
 
-    description: (
-      <p>
-        For this project, I developed a web application to
-        display dynamic visualizations of performance metrics for various test
-        cases of an AViT model, specifically applied to fluid dynamics
-        simulations. Additionally, I integrated support for NetCDF files,
-        enabling the visualization of complex fluid dynamics data.
-        <br />
-        <br />
-        See Github for more information and detailed documentation
-      </p>
-    ),
-  },
   {
     img: nn,
     title: "nnScratch",
@@ -259,36 +267,7 @@ const projectArr: ProjectData[] = [
       </p>
     ),
   },
-  {
-    img: DOE,
-    title: "ORNL Research",
-    img_des: DOE_des,
-    subtitle: "Optimizing Vision Transformers for Fluid Dynamics",
-    stack: "Public Speaking :3",
-
-    description: (
-      <p>
-        This is a research poster presented at the 2024 Departments of Energy
-        Cybersecurity and Technology conference. It provides insights into the
-        research findings, methodologies, and applications of the study,
-        showcasing the results and impact of my research.
-        <br />
-        <br />
-        <a
-          href={doePoster}
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{
-            color: "inherit" /* Match text color with surrounding text */,
-            textDecoration: "none" /* Remove underline */,
-            fontWeight: "bold" /* Match font weight with surrounding text */,
-          }}
-        >
-          Click here to view presentation
-        </a>
-      </p>
-    ),
-  },
+  
   {
     img: folio,
     title: "Custom Portfolio Sites",
@@ -305,6 +284,31 @@ const projectArr: ProjectData[] = [
         ensuring an optimal viewing experience across all screen sizes and
         devices, and are self-hosted through Netlify for seamless performance
         and deployment.
+        <br />
+        <br />
+        See Github for more information and detailed documentation
+      </p>
+    ),
+  },
+  {
+    img: huffman,
+    title: "Huffman Encoding",
+    img_des: huffman_des,
+    subtitle: "Compression Algorithm",
+    github: "https://github.com/josephjquinn/Huffman-Encoding-Algorithm",
+    stack: "Java",
+    description: (
+      <p>
+        This Java program implements the Huffman encoding algorithm for lossless
+        data compression.
+        <br />
+        <br />
+        It analyzes the frequency of characters in a user-input string,
+        constructs a Huffman tree prioritizing characters by frequency, and
+        assigns variable-length codes to each character. The program outputs the
+        binary representation of the encoded string and logs the Huffman codes
+        for each character to a text file, facilitating efficient data storage
+        and transmission.
         <br />
         <br />
         See Github for more information and detailed documentation
