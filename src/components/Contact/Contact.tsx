@@ -71,7 +71,7 @@ const Contact: React.FC = () => {
             </a>
             <br />
             <a
-              href="https://www.linkedin.com/in/joseph-quinn-196b76249/"
+              href="https://www.linkedin.com/in/josephjquinn"
               style={{
                 display: "flex",
                 justifyContent: "center",
@@ -116,7 +116,7 @@ const Contact: React.FC = () => {
             Joseph Quinn
             <br />
             <br />
-            Nashville, tennessee
+            Nashville, Tennessee
           </p>
         </div>
       </div>
